@@ -1,0 +1,67 @@
+<style>
+    .availablity-table {
+        height: 80vh;
+        overflow: auto;
+    }
+
+    .heading {
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+        font-weight: 500;
+    }
+
+    .heading h2 {
+        color: #009A61;
+        font-style: italic;
+    }
+</style>
+
+<div class="main" ng-controller="roomSelectionCtrl">
+
+    <div class="heading">
+        <h2>Room Booking</h2>
+    </div>
+
+    <div class="availablity-table">
+        <table class="table col-8 container mt-5">
+            <thead class="thead-dark">
+                <tr>
+                    <th scope="col">Room Number</th>
+                    <th scope="col">Room Type</th>
+                    <th scope="col">Room size</th>
+                    <th scope="col">Booking</th>
+                </tr>
+            </thead>
+
+            <tr ng-repeat="room in roomData" scope="row">
+                <td>{{ room.roomNumber }}</td>
+                <td>{{ room.roomType }}</td>
+                <td>{{ room.roomSize }}</td>
+                <td><button ng-click="bookRoom(room)">Book</button></td>
+
+            </tr>
+        </table>
+    </div>
+
+    <!-- for pop up box -->
+    <div class="modal fade" id="signInModal" tabindex="-1" role="dialog" aria-labelledby="signInModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered justify-content-center align-items-center" role="document">
+            <div class="modal-content">
+                <div class="">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="d-flex justify-content-center">
+                    <img src="app/style/image/check-one.png" alt="">
+                </div>
+                <div class="modal-body text-center">
+                    <p id="message"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

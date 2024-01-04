@@ -1,0 +1,31 @@
+<link rel="stylesheet" href="app/style/css/availability.css">
+<div ng-controller="dtCtrl2">
+
+    <div class="heading">
+        <h2>Room Availability</h2>
+    </div>
+
+    <table id="availability" class="display" style="width:100%">
+        <thead>
+            <tr>
+
+                <th style="width: 25%;" class="text-center">ROOM NUMBER</th>
+                <th style="width: 25%;" class="text-center">ROOM TYPE</th>
+                <th style="width: 25%;" class="text-center">ROOM SIZE</th>
+                <th style="width: 25%;" class="text-center">AVAILABILITY</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="table_row" ng-repeat="data in roomData2">
+                <td class="text-center">{{data.roomNumber}}</td>
+                <td class="text-center">{{data.roomType}}</td>
+                <td class="text-center">{{data.roomSize}}</td>
+                <td class="text-center">{{data.availability}}</td>
+            </tr>
+        </tbody>
+    </table>
+    <div class="bttn">
+        <button ng-click="goBack()">Go Back</button>
+    </div>
+</div>

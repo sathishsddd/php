@@ -1,0 +1,393 @@
+<link rel="stylesheet" href="app/style/css/style.css">
+
+
+<div class="main" ng-controller="MyCtrl">
+    <div class="main-sub" ng-show="showMainSub">
+        <div class="heading d-flex justify-content-center">
+            <header>Room booking details</header>
+        </div>
+        <div class="main-form d-flex">
+            <form name="myForm" novalidate>
+                <div class="container-fluid">
+                    <div class="row">
+                        <!-- first form row -->
+                        <div class="col-lg-6 col-md-6 col-sm-12 p-0 d-flex align-items-center justify-content-center">
+                            <div class="forml">
+                                <div class=" d-flex flex-column form1">
+                                    <label for="name" class="form-label">Name</label>
+                                    <input type="text" class="form-control" name="name" id="name" ng-model="room.name"
+                                        ng-pattern="/^[A-Za-z]+$/" ng-required="true" placeholder="Enter Full Name"
+                                        apply-error-class>
+                                    <span class="error" ng-show="myForm.name.$error.pattern">Name must
+                                        contain only alphabets.</span>
+                                    <span class="error"
+                                        ng-show="(myForm.$submitted || myForm.name.$touched)&& myForm.name.$error.required">Name
+                                        is
+                                        required.</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-lg-6 col-md-6 col-sm-12 p-0 d-flex align-items-center justify-content-center form11">
+                            <div class="formr">
+                                <div class=" d-flex flex-column form1">
+                                    <label for="age" class="form-label">Age</label>
+                                    <input type="number" class="form-control" id="age" name="age" ng-model="room.age"
+                                        ng-required="true" placeholder="Enter Age" apply-error-class age-validator>
+                                    <span class="error"
+                                        ng-show="myForm.age.$error.ageValidator && !myForm.age.$error.required">Age
+                                        should be
+                                        between 18 and 120</span>
+                                    <span class="error"
+                                        ng-show="(myForm.$submitted || myForm.age.$touched) && myForm.age.$error.required">Age
+                                        is
+                                        required.</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- second form row -->
+                        <div class="col-lg-6 col-md-6 col-sm-12 p-0 d-flex align-items-center justify-content-center">
+                            <div class="forml">
+                                <div class="form2">
+                                    <label for="gender" class="form-label">Gender</label>
+                                    <select class="custom-select select" id="gender" name="gender" ng-required="true"
+                                        ng-style="{'color': room.selectedGender ? 'black' : 'grey'}"
+                                        ng-model="room.selectedGender" apply-error-class>
+                                        <option ng-style="{'color': 'grey'}" value="" disabled hidden>Choose Gender
+                                        </option>
+                                        <option ng-style="{'color': 'black'}" ng-repeat="gender in genders">{{ gender }}
+                                        </option>
+                                    </select>
+                                    <span class="error"
+                                        ng-show="(myForm.$submitted || myForm.gender.$touched)&& myForm.gender.$error.required">Gender
+                                        must be
+                                        choosen.</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-lg-6 col-md-6 col-sm-12 p-0 d-flex align-items-center justify-content-center form11">
+                            <div class="formr">
+                                <div class=" d-flex flex-column form1">
+                                    <label for="purpose" class="form-label">Purpose</label>
+                                    <input type="text" class="form-control" id="purpose" name="purpose"
+                                        ng-model="room.purpose" ng-maxlength="50" ng-required="true"
+                                        placeholder="Enter Purpose of Booking" apply-error-class>
+                                    <span class="error" ng-show="myForm.purpose.$error.maxlength">Maximum 50
+                                        characters ony allowed.</span>
+                                    <span class="error"
+                                        ng-show="(myForm.$submitted || myForm.purpose.$touched)&& myForm.purpose.$error.required">Purpose
+                                        is
+                                        required.</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- third form row -->
+                        <div class="col-lg-6 col-md-6 col-sm-12 p-0 d-flex align-items-center justify-content-center">
+                            <div class="forml">
+                                <div class=" d-flex flex-column form1">
+                                    <label for="email" class="form-label">Email</label>
+                                    <input type="text" class="form-control" id="email" name="email"
+                                        ng-model="room.email" ng-required="true" placeholder="Enter E-Mail Address"
+                                        apply-error-class email-validator>
+                                    <span class="error"
+                                        ng-show="myForm.email.$error.emailValidator && !myForm.email.$error.required">Invalid
+                                        email address.</span>
+                                    <span class="error"
+                                        ng-show="(myForm.$submitted || myForm.email.$touched)&& myForm.email.$error.required">Email
+                                        is
+                                        required.</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12 p-0 d-flex align-items-center justify-content-center">
+                            <div class="formr">
+                                <div class=" d-flex flex-column form1">
+                                    <label for="number" class="form-label">Phone Number</label>
+                                    <input type="number" class="form-control" id="number" name="number"
+                                        ng-model="room.number" ng-required="true" ng-minlength="8" ng-maxlength="10"
+                                        placeholder="Enter Phone Number" apply-error-class>
+                                    <span class="error" ng-show="myForm.number.$error.minlength">Minimum 8 digits
+                                        required.</span>
+                                    <span class="error" ng-show="myForm.number.$error.maxlength">Maximum 10 digits
+                                        only allowed.</span>
+                                    <span class="error"
+                                        ng-show="(myForm.$submitted || myForm.number.$touched)&& myForm.number.$error.required">PhoneNumber
+                                        is
+                                        required.</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- fourth form row -->
+                        <div class="col-lg-6 col-md-6 col-sm-12 p-0 d-flex align-items-center justify-content-center">
+                            <div class="forml">
+                                <div class="form2">
+                                    <label for="idType" class="form-label">ID Type</label>
+                                    <select class="custom-select select" id="idType" name="idtype" ng-required="true"
+                                        ng-style="{'color': room.selectIdTypes ? 'black' : 'grey'}"
+                                        ng-model="room.selectIdTypes" apply-error-class>
+                                        <option ng-style="{'color':'grey'}" value="" disabled hidden>Choose Government
+                                            ID Type</option>
+                                        <option ng-style="{'color':'black'}" ng-repeat="idType in idTypes">{{ idType }}
+                                        </option>
+                                    </select>
+                                    <span class="error"
+                                        ng-show="(myForm.$submitted || myForm.idtype.$touched)&& myForm.idtype.$error.required">Government
+                                        ID type
+                                        must be choosen.</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12 p-0 d-flex align-items-center justify-content-center">
+                            <div class="formr">
+                                <div class=" d-flex flex-column form1">
+                                    <label for="idNumber" class="form-label">ID Number</label>
+                                    <input type="text" class="form-control" id="idNumber" name="idnumber"
+                                        ng-model="room.idnumber" ng-required="true"
+                                        placeholder="Enter Government ID Number" apply-error-class id-validator>
+                                    <span class="error"
+                                        ng-show="myForm.idnumber.$error.idValidator && !myForm.idnumber.$error.required">Invalid
+                                        ID Number.</span>
+                                    <span class="error"
+                                        ng-show="(myForm.$submitted || myForm.idnumber.$touched)&& myForm.idnumber.$error.required">Id
+                                        Number is
+                                        required.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex mt-3 btnm ">
+                    <div class="btnl d-flex justify-content-center">
+                        <div class="btnl1 d-flex">
+                            <button ng-click="goToAdditionalRequirements()" id="next">Next</button>
+                        </div>
+                    </div>
+                    <div class="btnr d-flex justify-content-center">
+                        <div class="btnr1 d-flex">
+                            <button id="view" ng-click="viewBooking()">View Bookings</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- additional requirement page -->
+    <div class="main1 d-flex   align-items-center justify-content-center" ng-show="showMain1">
+        <div class="main-sub1 ">
+            <div class="heading1 d-flex justify-content-center">
+                <header>Additional Requirements</header>
+            </div>
+            <div class="main-form1 ">
+                <form name="myForm2" novalidate>
+                    <div class="container-fluid">
+                        <div class="row justify-content-between">
+                            <!-- first form row -->
+                            <div class="col-lg-5 col-md-12 col-sm-12 p-0 d-flex cen first ">
+                                <div class="forml">
+                                    <p class="m-0">Room Type</p>
+
+                                    <div class="row">
+                                        <div class="col form-rad ">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="exampleRadios"
+                                                    id="exampleRadios1" value="AC" ng-model="room.roomType" checked>
+                                                <label class="form-check-label" for="exampleRadios1">
+                                                    AC
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col form-rad ">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="exampleRadios"
+                                                    id="exampleRadios2" value="NON-AC" ng-model="room.roomType">
+                                                <label class="form-check-label" for="exampleRadios2">
+                                                    N0N-AC
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-lg-5 col-md-12 col-sm-12 p-0 d-flex cen">
+                                <div class="formr">
+                                    <my-template></my-template>
+                                </div>
+                            </div>
+                            <!-- second form row -->
+                            <div class="col-lg-5 col-md-12 col-sm-12 p-0 d-flex cen">
+                                <div class="forml">
+
+                                    <div class=" d-flex flex-column form1">
+                                        <label for="checkInDate" class="form-label">Check-In Date </label>
+                                        <input type="text" class="form-control" id="checkInDate" name="checkInDate"
+                                            ng-model="room.checkInDate" ng-required="true"
+                                            min="{{ today | date:'yyyy-MM-dd' }}" placeholder="Choose Check-In Date"
+                                            onfocus="{this.type='date'}" apply-error-class>
+                                        <span class="error"
+                                            ng-show="(myForm2.$submitted || myForm2.checkInDate.$touched)&& myForm2.checkInDate.$error.required">Room
+                                            check-in date must be choosen.</span>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-lg-5 col-md-12 col-sm-12 p-0 d-flex align-items-center cen form11">
+                                <div class="formr">
+
+                                    <div class=" d-flex flex-column form1">
+                                        <label for="checkInTime" class="form-label">Check-in Time
+                                        </label>
+                                        <input type="text" class="form-control" id="checkInTime" name="checkInTime"
+                                            ng-model="room.checkInTime" ng-required="true"
+                                            placeholder="Choose room check-in time" onfocus="{this.type='time'}"
+                                            apply-error-class>
+                                        <span class="error"
+                                            ng-show="(myForm2.$submitted || myForm2.checkInTime.$touched) && myForm2.checkInTime.$error.required">Room
+                                            check-in time must be choosen.</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- third form row -->
+                            <div class="col-lg-5 col-md-12 col-sm-12 p-0 d-flex cen">
+                                <div class="forml">
+
+                                    <div class=" d-flex flex-column form1">
+                                        <label for="checkOutDate" class="form-label">Expected Check-Out date</label>
+                                        <input type="text" class="form-control" id="checkOutDate" name="checkOutDate"
+                                            ng-model="room.checkOutDate" ng-required="true"  min="{{ today | date:'yyyy-MM-dd' }}"
+                                            placeholder="Choose Expected Check-Out date" onfocus="{this.type='date'}"
+                                            apply-error-class date-validator check-in-date="room.checkInDate">
+                                            <span class="error2"
+                                            ng-show="myForm2.checkOutDate.$error.dateValidator && !myForm2.checkOutDate.$error.required">Check-out
+                                            date must be greater than check-in date
+                                            .</span>
+                                        <span class="error"
+                                            ng-show="(myForm2.$submitted || myForm2.checkOutDate.$touched) && myForm2.checkOutDate.$error.required">Room
+                                            check-out date must be choosen.</span>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-lg-5 col-md-12 col-sm-12 p-0 d-flex align-items-center cen form11">
+                                <div class="formr">
+
+                                    <div class=" d-flex flex-column form1">
+                                        <label for="checkOutTime" class="form-label">Expected Check-Out Time
+                                        </label>
+                                        <input type="text" class="form-control" id="checkOutTime" name="checkOutTime"
+                                            ng-model="room.checkOutTime" ng-required="true"
+                                            placeholder="Choose Expected Check-Out Time" onfocus="{this.type='time'}"
+                                            apply-error-class>
+                                        <span class="error"
+                                            ng-show="(myForm2.$submitted || myForm2.checkOutTime.$touched) && myForm2.checkOutTime.$error.required">Room
+                                            check-out time must be choosen.</span>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- services provided checkbox-->
+                    <div class=" col-lg-4 d-flex p-0 cen service">
+                        <h2>Services Provided</h2>
+                    </div>
+                    <div class="col-lg-4 d-flex p-0 cen check_box">
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1"
+                                ng-model="cateringChecked">
+                            <label class="form-check-label" for="inlineCheckbox1">Catering</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2"
+                                ng-model="laundryChecked">
+                            <label class="form-check-label" for="inlineCheckbox2">Laundry services</label>
+                        </div>
+                    </div>
+
+                    <!-- service provided form -->
+                    <div class="container-fluid">
+                        <div class="row d-flex justify-content-between">
+                            <div class="col-lg-5 col-md-12 col-sm-12 p-0 cen d-flex ">
+                                <div class="forml">
+                                    <div class=" d-flex flex-column form1" ng-show="cateringChecked">
+                                        <label for="cateringType" class="form-label">Catering Type </label>
+                                        <select class="custom-select select" id="cateringType" name="cateringType"
+                                            ng-required="cateringChecked" ng-model="room.selectCateringTypes"
+                                            ng-style="{'color': room.selectCateringTypes ? 'black' : 'grey'}"
+                                            apply-error-class>
+                                            <option ng-style="{'color': 'grey'}" value="" disabled hidden>Choose
+                                                Catering Type</option>
+                                            <option ng-style="{'color': 'black'}"
+                                                ng-repeat="cateringType in cateringTypes">{{
+                                                cateringType }}</option>
+                                        </select>
+                                        <span class="error"
+                                            ng-show="(myForm2.$submitted || myForm2.cateringType.$touched) && myForm2.cateringType.$error.required">Catering
+                                            type must be chosen</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-5 col-md-12 col-sm-12 p-0 d-flex align-items-center cen form11">
+                                <div class="formr">
+
+                                    <div class=" d-flex flex-column form1" ng-show="laundryChecked">
+                                        <label for="laundryType" class="form-label">Laundry Type
+                                        </label>
+                                        <select class="custom-select select" id="laundryType" name="laundryType"
+                                            ng-required="laundryChecked" ng-model="room.selectLaundryTypes"
+                                            ng-style="{'color': room.selectLaundryTypes ? 'black' : 'grey'}"
+                                            apply-error-class>
+                                            <option ng-style="{'color': 'grey'}" value="" disabled hidden>Choose Laundry
+                                                Type</option>
+                                            <option ng-style="{'color': 'black'}"
+                                                ng-repeat="laundryType in laundryTypes">{{ laundryType
+                                                }}</option>
+                                        </select>
+                                        <span class="error"
+                                            ng-show="(myForm2.$submitted || myForm2.laundryType.$touched) && myForm2.laundryType.$error.required">Laundry
+                                            type must be chosen</span>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-lg-5 p-0">
+                                <div class="Bttn d-flex justify-content-end">
+                                    <button ng-click="saveRoomDetails()">Save</button>
+                                </div>
+                            </div>
+                            <div class="col-lg-5 p-0">
+                                <div class="Bttn d-flex">
+                                    <button ng-click="viewBooking()">View Bookings</button>
+                                </div>
+                            </div>
+
+                        </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- for pop up box -->
+    <div class="modal fade" id="signInModal" tabindex="-1" role="dialog" aria-labelledby="signInModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered justify-content-center align-items-center" role="document">
+            <div class="modal-content">
+                <div class="">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="d-flex justify-content-center">
+                    <img src="app/style/image/check-one.png" alt="">
+                </div>
+                <div class="modal-body text-center">
+                    <p id="signInModalMessage">Details saved.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

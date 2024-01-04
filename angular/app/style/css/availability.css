@@ -1,0 +1,118 @@
+
+.highlight{
+    color: black;
+  }
+
+  .heading{
+    text-align: center;
+    margin: 30px 0px;
+  }
+  .paginate_button{
+    padding: 2px 3px !important;
+    border: 1px solid grey !important;
+    border-radius: 5px !important;
+  }
+  .text-left {
+    text-align: center !important;
+    padding: 10px 0px !important;
+  }
+
+.bttn{
+  margin: 20px 0px 0px 20px;
+}
+
+  .dataTables_length {
+    margin: 10px 0px;
+    position: absolute;
+    right: 0; 
+    margin-right: 300px;
+    color: #687182 !important;
+  }
+
+  .dataTables_info{
+    margin: 10px 0px;
+    margin-left: 20px;
+    color: #687182 !important;
+    padding: 0px !important; 
+  }
+
+  .dataTables_paginate{
+    margin: 10px 0px;
+    margin-right: 20px;
+    padding: 0px !important;
+  }
+
+  .custom-pagination{
+    color: #687182 !important;
+    margin: 0px 5px;
+  }
+
+  .dataTables_wrapper {
+    background-color: #F5F5F5 !important;
+  }
+
+  .left{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .btn{
+    display: flex;
+    margin-right: 20px;
+  }
+
+  button{
+    border: 1px solid #009A61;
+    padding: 6px 26px;
+    background-color: #009A61;
+    border-radius: 8px;
+    color: white;
+    font-size: 16px;
+  }
+
+  .dataTables_length select{
+    border: none !important;
+    color: #687182 !important;
+  }
+
+  .table_row{
+    height: 60px;
+  }
+
+  td{
+    padding: 10px 0px !important;
+    border: none !important;
+    font-family: inter;
+    color: #626262;
+    font-weight: 400;
+  }
+  .display,th{
+    border: none !important;
+  }
+  th{
+    font-size: 14px;
+    color: #464F60;
+    font-family: inter;
+    height: 50px;
+  }
+  table.dataTable.display tbody tr.odd > .sorting_1 {
+    background-color: transparent;
+}
+table.dataTable.display tbody tr.even > .sorting_1 {
+    background-color: #f9f9f9;
+}
+
+table.dataTable.display tbody tr.even {
+  background-color: #f9f9f9;
+}
+table.dataTable.display tbody tr.odd {
+  background-color: white;
+}
+
+table.dataTable.display tbody tr:hover > .sorting_1,
+table.dataTable.display tbody tr.even > .sorting_1:hover {
+  background-color: #F2F5FA !important;
+}
+table.dataTable.display tbody tr:hover {
+  background-color:  #F2F5FA !important ;
+}

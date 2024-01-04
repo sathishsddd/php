@@ -1,0 +1,33 @@
+<link rel="stylesheet" href="app/style/css/view.css">
+<div class="main">
+    <div class="main1">
+        <div class="head text-center">
+            <h2>Registration Details</h2>
+        </div>
+        <div class="view-modal">
+            <div class="view-modal-data">
+                <h6>Name</h6>
+                <p>{{ insertedData.userName }}</p>
+            </div>
+            <div class="view-modal-data">
+                <h6>Email</h6>
+                <p>{{ insertedData.email }}</p>
+            </div>
+            <div class="view-modal-data">
+                <h6>PhoneNumber</h6>
+                <p>{{ insertedData.phoneNumber }}</p>
+            </div>
+            <div class="view-modal-data">
+                <h6>Password</h6>
+                <p>{{ insertedData.password }}</p>
+            </div>
+            <div class="view-modal-data">
+                <h6>Re-Password</h6>
+                <p>{{ insertedData.rePassword }}</p>
+            </div>
+        </div>
+        <div class="btn">
+            <button ng-click="generatePdf(insertedData)">Download PDF</button>
+        </div>
+    </div>
+</div>

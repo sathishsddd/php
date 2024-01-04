@@ -1,0 +1,99 @@
+<div ng-controller="EditController">
+    <div class="modal-content ">
+
+        <div class="modal-head">
+            <input type="button" value="Cancel" class="btn pop-up-btn" data-dismiss="modal" aria-label="Close" />
+            <!-- <div class="success-msg">
+                <span ng-show="$ctrl.formSubmitted">Student Updated </span>
+             </div> -->
+        </div>
+
+        <div class="edit-modal-body">
+            <form>
+                <div class="edit-modal-data ">
+                    <label for="Name">Name</label>
+                    <input type="text" id="Name" class="form-control" ng-model="$ctrl.userDetail.name">
+                </div>
+
+                <div class="edit-modal-data ">
+                    <label for="email">Email</label>
+                    <input type="text" id="email" class="form-control" ng-model="$ctrl.userDetail.email">
+                </div>
+
+                <div class="edit-modal-data">
+                    <label for="number">Phone Number</label>
+                    <input type="number" id="number" class="form-control" ng-model="$ctrl.userDetail.number">
+                </div>
+                <div class="edit-modal-data">
+                    <label for="gender">Gender</label>
+                    <select class="form-control" id="gender" ng-model="$ctrl.userDetail.selectedGender"
+                        ng-required="true" placeholder="{{$ctrl.userDetail.selectedGender}}">
+                        <!-- <option value="" disabled>Select Gender</option> -->
+                        <option>Male</option>
+                        <option>Female</option>
+                        <option>Transgender</option>
+                    </select>
+                </div>
+                <div class="edit-modal-data">
+                    <label for="age">Age</label>
+                    <input type="number" id="age" class="form-control" ng-model="$ctrl.userDetail.age">
+                </div>
+
+                <div class="edit-modal-data">
+                    <label for="datepicker-modal">Check-in Date</label>
+                    <input type="text" id="datepicker-modal" class="form-control date-input" ng-model="$ctrl.userDetail.checkInDate"  ng-click="openDatePicker()">
+                </div>
+                <div class="edit-modal-data">
+                    <label for="datepicker-modal2">Check-out Date</label>
+                    <input type="text" id="datepicker-modal2" class="form-control date-input" ng-model="$ctrl.userDetail.checkOutDate" ng-click="openDatePicker()">
+                </div>
+                <div class="edit-modal-data">
+                    <label for="roomType">Room Type</label>
+                    <select class="form-control" id="roomType" ng-model="$ctrl.userDetail.roomType" ng-required="true"
+                        placeholder="{{$ctrl.userDetail.roomType}}">
+                        <option value="" disabled>Select RoomType</option>
+                        <option>AC</option>
+                        <option>NON-AC</option>
+                    </select>
+                </div>
+                <div class="edit-modal-data">
+                    <label for="roomSize">Room Size</label>
+                    <select class="form-control" id="roomSize" ng-model="$ctrl.userDetail.selectedRoomSize"
+                        ng-required="true" placeholder="{{$ctrl.userDetail.selectedRoomSize}}">
+                        <option value="" disabled>Select RoomSize</option>
+                        <option>1 bed room</option>
+                        <option>2 bed room</option>
+                        <option>3 bed room</option>
+                        <option>4 bed room</option>
+                    </select>
+                </div>
+                <div class="edit-modal-data">
+                    <label for="idType">Id Type</label>
+                    <select class="form-control" id="idType" ng-model="$ctrl.userDetail.selectIdTypes"
+                        ng-required="true" placeholder="{{$ctrl.userDetail.selectIdTypes}}">
+                        <option disabled>Select ID Type</option>
+                        <option>Aadhar card</option>
+                        <option>PAN Card</option>
+                        <option>Voter ID</option>
+                        <option>Driving License</option>
+                    </select>
+                </div>
+                <div class="edit-modal-data">
+                    <label for="idNumber">Id Number</label>
+                    <input type="text" id="idNumber" class="form-control" ng-model="$ctrl.userDetail.idnumber">
+                </div>
+                <div class="edit-modal-data">
+                    <label for="purpose">Purpose</label>
+                    <input type="text" id="purpose" class="form-control" ng-model="$ctrl.userDetail.purpose">
+                </div>
+
+            </form>
+
+         <div class="bttn">
+            <button type="submit" ng-click="$ctrl.onSubmit($ctrl.userDetail)" >Submit</button>
+         </div>
+
+        </div>
+    </div>
+   
+</div>

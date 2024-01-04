@@ -1,0 +1,428 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Quando', serif;
+}
+
+/* for login page */
+
+.logint {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    color: #009A61;
+    margin: 50px 0px;
+}
+
+
+.toggle-button {
+    display: inline-block; 
+    cursor: pointer;
+    padding: 14px 50px;
+    border: 1px solid #009A61;
+    border-radius: 6px;
+    margin: 0px;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 600;
+    background-color: #fff;
+}
+
+.button {
+    margin-bottom: 40px;
+}
+
+
+#button2 {
+    margin-left: -8px;
+}
+
+.loginform {
+    width: 340px;
+    display: inline-block;
+}
+
+.loginform1 {
+    margin-bottom: 30px;
+    position: relative;
+}
+.loginform1 .error {
+    display: block;
+    position: absolute;
+    bottom: 0; /* Align the bottom of the error span to the bottom of the container */
+    margin-bottom: -1rem; 
+}
+
+.form-label {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.close {
+    margin-right: 10px;
+}
+
+.form-control {
+    border: 3px solid #626262;
+    border-radius: 10px;
+}
+
+.signin-button {
+    cursor: pointer;
+    padding: 12px 60px;
+    background-color: #009A61;
+    color: white;
+    border-radius: 18px;
+    margin: 0px;
+    font-family: 'Outfit', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    border: none;
+
+}
+
+.signup a{
+    text-decoration: none;
+}
+
+.signin {
+    margin-bottom: 30px;
+}
+
+.toggle-button.active {
+    background-color: #009A61;
+    color: #fff;
+}
+.toggle-button2.active {
+    background-color: #009A61;
+    color: #fff;
+}
+
+.account{
+    display: none !important;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.account1{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.account1 a{
+     color: #009A61;
+     text-decoration: none;
+}
+
+
+
+/* for registration page */
+
+.register{
+    width: 100%;
+    margin-top: 120px;
+    margin-bottom: 50px;
+}
+
+.register1{
+    width: 90%;
+    overflow-y: auto;
+}
+.registerl{
+    width: 100%;
+}
+
+.registerlm,.registerrm{
+    width: 100%;
+    flex-direction: column;
+}
+
+.registerl1 h2{
+    font-size: 40px;
+    font-weight: 500;
+    color: #009A61;
+}
+
+.registerl2 img{
+    width: 100%;
+}
+
+.registerl3 a{
+    color: #009A61;
+    text-decoration: none;
+}
+
+.toggle-button2 {
+    display: inline-block; 
+    cursor: pointer;
+    padding: 12px 50px;
+    border: 1px solid #009A61;
+    border-radius: 6px;
+    margin: 0px;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 600;
+    /* background-color: #fff; */
+}
+
+#button4{
+    margin-left: -8px;
+}
+
+.buttonr{
+    margin-bottom: 30px;
+}
+
+.registerform{
+    width:330px;
+    display: inline-block;
+}
+
+.registerform1{
+    margin-bottom: 36px;
+    position: relative;
+}
+.registerform1 .error {
+    display: block;
+    position: absolute;
+    bottom: 0; /* Align the bottom of the error span to the bottom of the container */
+    margin-bottom: -1rem; 
+}
+
+
+.signup-button {
+    cursor: pointer;
+    padding: 10px 60px;
+    background-color: #009A61;
+    color: white;
+    border-radius: 18px;
+    margin: 0px;
+    font-family: 'Outfit', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    border: none;
+
+}
+button:focus {
+    outline: none;
+  }
+
+  form input:focus {
+    outline: none;
+}
+
+.bttn{
+    cursor: pointer;
+    padding: 10px 90px;
+    background-color: #009A61;
+    color: white;
+    border-radius: 18px;
+    font-family: 'inter';
+    font-size: 16px;
+    font-weight: 300;
+    border: none;
+
+}
+
+.error{
+    color:  #8E1414;
+    font-size: 12px;
+}
+
+
+
+/* media query for mobile */
+@media only screen and (max-width: 600px) {
+
+    /* for login page */
+
+    .log,.log1 {
+        height: 100%;
+    }
+
+    .log1 {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .logint {
+        margin-top: 0px;
+        margin-bottom: 30px !important;
+    }
+
+    .login {
+        width: 100%;
+    }
+
+    .login1 {
+        width: 100%;
+        display: inline-block;
+    }
+
+    .loginbl {
+        display: none !important;
+    }
+
+    .loginb {
+        justify-content: center !important;
+        /* align-items: start !important; */
+    }
+
+    .loginbr {
+        margin: 0px !important;
+        width: 90%;
+        align-items: center;
+    }
+
+    .toggle-button {
+        padding: 14px 40px;
+    }
+
+    .loginform {
+        width: 280px;
+    }
+
+    .signin {
+        margin-top: 30px !important;
+    }
+
+    .signup {
+        margin-top: 0px !important;
+    }
+
+    /* for registration page */
+
+
+    .registerl2,.registerl3 {
+        display: none !important;
+    }
+
+    .registerl1{
+        margin-bottom: 20px;
+    }
+
+    .registerl1 h2{
+        font-size: 30px;
+    }
+
+    .registerrm{
+        display: flex;
+        align-items: center !important;
+        justify-content: center !important;
+    }
+
+    .registerform{
+        width:280px;
+    }
+
+    .toggle-button2 {
+        padding: 12px 40px;
+    }
+    
+    .register{
+        margin-top: 50px !important;
+        margin-bottom: 20px !important;
+    }
+
+    .account{
+        display: flex !important;
+        margin-bottom: 50px;
+    }
+
+    .modal-content{
+        width: 90%;
+    }
+   
+    
+
+}
+
+/* media query for tab */
+@media (min-width: 600px) and (max-width: 1000px) {
+
+    /* for login page */
+    .logint {
+        margin-top: 100px;
+        margin-bottom: 30px !important;
+    }
+
+    .loginbl {
+        display: none !important;
+    }
+
+    .loginb {
+        justify-content: center !important;
+        /* align-items: start !important; */
+    }
+
+    .loginbr {
+        margin: 0px !important;
+        width: 90%;
+        align-items: center;
+    }
+
+    .toggle-button {
+        padding: 14px 90px;
+    }
+
+    .loginform {
+        width: 500px;
+    }
+
+    .signin {
+        margin-top: 30px !important;
+    }
+
+    .signup {
+        margin-top: 0px !important;
+    }
+
+    .toggle-button {
+        font-size: 20px;
+    }
+
+    /* for registration page */
+    .reg{
+        height: 0%;
+        
+    }
+    .registerl2,.registerl3 {
+        display: none !important;
+    }
+
+    .registerl1{
+        margin-bottom: 20px;
+    }
+
+    .registerl1 h2{
+        font-size: 30px;
+    }
+
+    .registerrm{
+        display: flex;
+        align-items: center !important;
+        justify-content: center !important;
+    }
+
+    .registerform{
+        width:360px;
+    }
+
+    .toggle-button2 {
+        padding: 12px 60px;
+    }
+    
+    .register{
+        margin: 50px 0px !important;
+    }
+
+    .account{
+        display: flex !important;
+        margin-bottom: 10px;
+    }
+}
+

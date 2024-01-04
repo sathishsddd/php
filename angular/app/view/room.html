@@ -1,0 +1,82 @@
+<link rel="stylesheet" href="app/style/css/room.css">
+
+<div class="main" ng-controller="roomController">
+    <div class="main1 d-flex flex-column">
+        <div class="container-fluid">
+            <div class="row justify-content-between">
+                <div class="col-lg-6 col-md-5 col-sm-12 p-0">
+                    <div class="main2">
+                        <div class="heading">
+                            <h2>Room Registration</h2>
+                        </div>
+                        <div class="img">
+                            <img src="app/style/image/5464649_2853458 1.png" alt="">
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-lg-5 col-md-5 col-sm-12 p-0">
+                    <div class="registerform d-flex">
+                        <form>
+                            <div class=" d-flex flex-column registerform1">
+                                <label for="roomNumber" class="form-label m-0">RoomNumber</label>
+                                <input type="number" class="form-control" id="roomNumber" name="roomNumber"
+                                    ng-model="room.roomNumber" ng-required="true" placeholder="Enter RoomNumber">
+                            </div>
+                            <div class="registerform1">
+                                <label for="roomSize" class="form-label m-0">RoomSize</label>
+                                <select class="custom-select select" id="roomSize" name="roomSize" ng-required="true"
+                                    ng-style="{'color': room.roomSize ? 'black' : 'grey'}" ng-model="room.roomSize">
+                                    <option ng-style="{'color': 'grey'}" value="" disabled hidden>Choose RoomSize
+                                    </option>
+                                    <option ng-style="{'color': 'black'}">1 bed room</option>
+                                    <option ng-style="{'color': 'black'}">2 bed room</option>
+                                    <option ng-style="{'color': 'black'}">3 bed room</option>
+                                    <option ng-style="{'color': 'black'}">4 bed room</option>
+                                </select>
+                            </div>
+                            <div class="registerform1">
+                                <label for="roomType" class="form-label m-0">RoomType</label>
+                                <select class="custom-select select" id="roomType" name="roomType" ng-required="true"
+                                    ng-style="{'color': room.roomType ? 'black' : 'grey'}" ng-model="room.roomType">
+                                    <option ng-style="{'color': 'grey'}" value="" disabled hidden>Choose roomType
+                                    </option>
+                                    <option ng-style="{'color': 'black'}">AC</option>
+                                    <option ng-style="{'color': 'black'}">NON-AC</option>
+                                </select>
+                            </div>
+                            <div class="text-center mt-5 ">
+                                <button type="button" class="register-button" ng-click="addRoom()">Add Room</button>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="text-center mt-3 ">
+                        <button type="button" class="view-button" ng-click="viewBooking()">View Bookings</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="signInModal" tabindex="-1" role="dialog" aria-labelledby="signInModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered justify-content-center align-items-center" role="document">
+      <div class="modal-content">
+        <div class="">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="d-flex justify-content-center">
+          <img src="app/style/image/check-one.png" alt="">
+        </div>
+        <div class="modal-body text-center">
+          <p id="message"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>

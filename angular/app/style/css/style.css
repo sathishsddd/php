@@ -1,0 +1,318 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Quando', serif;
+}
+
+.main,
+.main-sub,
+.main-form,
+.main-form1 {
+    width: 100%;
+}
+
+.heading {
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.heading header {
+    color: #009A61;
+    font-size: 26px;
+    font-weight: 600;
+    text-shadow: 0px 3px 1px rgba(0, 0, 0, 0.2);
+}
+
+.forml,
+.formr {
+    width: 400px;
+    margin-bottom: 40px;
+}
+
+.form1,
+.form2 {
+    position: relative;
+}
+
+.error,
+.error2 {
+    font-size: 14px;
+    color: #8E1414;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: -1.2rem;
+}
+
+.error2 {
+    margin-bottom: -2.4rem;
+}
+
+.form-label {
+    margin-bottom: 0px;
+}
+
+.form-control,
+.custom-select {
+    font-size: 16px;
+    border: 3px solid rgb(177, 170, 170) !important;
+    border-radius: 10px !important;
+    box-shadow: 0px 3px 4px #D5D5D5;
+    color: black;
+}
+
+.custom-select {
+    color: rgb(138, 136, 136);
+    margin-bottom: 0px;
+    height: 42px !important;
+}
+
+.btnl,
+.btnr {
+    width: 50%;
+}
+
+.btnl1,
+.btnr1 {
+    width: 400px;
+}
+
+.btnl1 {
+    justify-content: flex-end !important;
+}
+
+button {
+    border-radius: 16px !important;
+    cursor: pointer;
+    background-color: #009A61;
+    color: white;
+    padding: 8px 40px;
+    border: none !important;
+    font-family: IBM Plex Sans;
+    font-size: 18px;
+    font-weight: 500;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+}
+
+
+/* to remove the background of input box when it is autofilled */
+input.form-control:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px white inset;
+    color: black;
+}
+
+.ng-invalid.ng-dirty {
+    border-color: rgb(212, 117, 117) !important;
+}
+
+
+.error-msg {
+    border-color: rgb(212, 117, 117) !important;
+    background-color: #F2C6C6;
+    color: #8E1414 !important;
+}
+
+.error-msg::placeholder {
+    color: #8E1414 !important;
+}
+
+/* Style the disabled option text */
+.error-msg select option[disabled] {
+    color: #8E1414 !important;
+}
+
+/* for mobile view */
+@media only screen and (max-width: 600px) {
+    body {
+        height: max-content !important;
+        overflow: auto !important;
+    }
+
+    .forml,
+    .formr {
+        width: 280px;
+        margin-bottom: 40px;
+    }
+
+    .heading {
+        margin-top: 60px;
+        margin-bottom: 30px;
+    }
+
+    .heading header {
+        font-size: 24px;
+    }
+
+    .btnm {
+        flex-direction: column;
+        margin-bottom: 50px;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+
+    .btnl,
+    .btnr,
+    .btnm {
+        width: 100%;
+    }
+
+    .btnl1,
+    .btnr1 {
+        width: 100%;
+        justify-content: center !important;
+        align-items: center !important;
+        margin-bottom: 10px;
+    }
+
+    body {
+        height: 100% !important;
+        overflow: scroll !important;
+    }
+
+    .main-sub1 {
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    .heading1 header {
+        font-size: 20px !important;
+    }
+
+    .Bttn {
+        width: 100% !important;
+        justify-content: center !important;
+        margin-bottom: 20px;
+    }
+
+    .forml,
+    .formr {
+        justify-content: center !important;
+    }
+
+    .cen {
+        justify-content: center !important;
+        align-items: center !important;
+    }
+
+}
+
+
+/* for tab view */
+@media (min-width: 600px) and (max-width: 1000px) {
+
+
+    .forml,
+    .formr {
+        width: 300px;
+        margin-bottom: 40px;
+    }
+
+    .heading {
+        margin-top: 100px;
+    }
+
+    .heading header {
+        font-size: 40px;
+    }
+
+    .btnl1,
+    .btnr1 {
+        width: 300px;
+    }
+
+}
+
+
+/* only for desktop */
+@media only screen and (min-width: 1000px) {
+
+    body,
+    html {
+        height: 100%;
+
+    }
+
+    body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+}
+
+@media only screen and (min-width: 1180px) {
+    .error2 {
+        margin-bottom: -1.2rem;
+    }
+}
+
+
+
+
+/* for additional requiement css */
+
+
+.main1 {
+    width: 100%;
+}
+
+.main-sub1 {
+    width: 80%;
+}
+
+.heading1 {
+    width: 100%;
+    /* /* margin-top: 70px; */
+    margin-bottom: 40px;
+}
+
+.heading1 header {
+    color: #009A61;
+    font-size: 26px;
+    font-weight: 600;
+    text-shadow: 0px 3px 1px rgba(0, 0, 0, 0.2);
+}
+
+.first {
+    margin-bottom: 20px;
+}
+
+.formr1,
+.forml1 {
+    margin-bottom: 30px;
+    width: 370px;
+}
+
+.form-rad {
+    width: 100px !important;
+}
+
+.service {
+    margin-bottom: 10px;
+}
+
+.service h2 {
+    color: #009A61;
+    font-size: 28px;
+}
+
+.form-check-inline {
+    margin-right: 20px;
+}
+
+.check_box {
+    margin-bottom: 20px;
+}
+
+.Bttn {
+    width: 370px;
+}
+
+/* to change the color of the input field */
+input.form-control:not(:placeholder-shown) {
+    color: black;
+}
+
+.form-check-input {
+    accent-color: grey !important;
+}

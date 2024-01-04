@@ -1,0 +1,71 @@
+<link rel="stylesheet" href="app/style/css/login.css">
+
+<div class="login"  ng-controller="loginCtrl">
+    <div class="login1">
+        <div class="logint">
+            <h2>Login</h2>
+        </div>
+        <div class="container-fluid">
+            <div class="row justify-content-between loginb">
+                <div class="col-lg-6  p-0 d-flex justify-content-center loginbl">
+                    <img src="app/style/image/4957412_Mobile-login-Cristina 1.png" alt="">
+                </div>
+                <div class="col-lg-5 col-md-12 col-sm-12 d-flex flex-column p-0 mt-5 loginbr">
+
+                    <div class="button">
+                        <div class="toggle-button" id="button1" ng-class="{active: activeButton === 'button1'}" ng-click="toggleError();toggleUser2('Owner');toggleButton('button1')">Owner</div>
+                        <div class="toggle-button" id="button2" ng-class="{active: activeButton === 'button2'}" ng-click="toggleError();toggleUser2('Customer');toggleButton('button2')">Customer</div>
+                    </div>
+
+                    <div class="loginform">
+                        <form name="myForm3" novalidate>
+                            <div class=" d-flex flex-column loginform1">
+                                <label for="userName" class="form-label">Username</label>
+                                <input type="text" class="form-control" id="userName" name="userName" ng-model="login.userName" ng-required="true" placeholder="Enter username" input-error-class >
+                                <span  class="error" ng-show="showError && myForm3.$submitted && myForm3.userName.$error.required">Name is required.</span>
+                                <span class="error" ng-show="showError2 && myForm3.userName.$valid && !(login.userName | isAlphabet) ">Name must
+                                    contain only alphabets.</span> 
+
+                            </div>
+                            <div class=" d-flex flex-column loginform2">
+                                <label for="password" class="form-label">Password</label>
+                                <input type="password" class="form-control" id="password" name="password" ng-model="login.password" ng-required="true" 
+                                    placeholder="Enter password" input-error-class>
+                                    <span  class="error" ng-show="showError&& myForm3.$submitted && myForm3.password.$error.required">password is required.</span>
+                                    
+                            </div>
+                            <div class="text-center mt-5 signin">
+                                <button type="button" class="signin-button" id="button3" ng-click="validateInput()">SIGN IN</button>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="signup mt-5">
+                        <p id="signInModalLabel">Dont have an account? <a href="#!/register" style="color: #009A61;">Sign Up</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- for pop up box -->
+<div class="modal fade" id="signInModal" tabindex="-1" role="dialog" aria-labelledby="signInModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered justify-content-center align-items-center" role="document">
+        <div class="modal-content">
+            <div class="">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="d-flex justify-content-center">
+                <img src="app/style/image/check-one.png" alt="">
+            </div>
+            <div class="modal-body text-center">
+                <p id="signInModalMessage">{{signInMessage}}</p>
+            </div>
+        </div>
+    </div>
+</div>

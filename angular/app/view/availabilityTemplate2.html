@@ -1,0 +1,29 @@
+
+<link rel="stylesheet" href="app/style/css/availability.css">
+
+
+<div ng-controller="availabilityController3">
+    <h2 class="text-center m-5">Room Availability Checker</h2>
+    <form class="container">
+        <div class="row justify-content-around m-2">
+            <div >
+                <label>Check-in Date:</label>
+                <input type="date" class="form-control" ng-model="booking.checkInDate">
+            </div>
+            <div ></div>
+            <div >
+                <label>Check-out Date:</label>
+                <input type="date" class="form-control" ng-model="booking.checkOutDate">
+            </div>
+        </div>
+
+        <div class=" d-flex justify-content-center text-center m-2">
+            <button type="button" class="btn btn-primary active" ng-click="checkAvailability()">Check
+                Availability</button>
+        </div>
+    </form>
+
+    <p ng-show="!isRoomAvailable" >
+        Sorry, no rooms are available for the specified dates and times.</p>
+
+</div>
