@@ -172,8 +172,8 @@ ini_set("display_errors",true);
                 if ($stmt->affected_rows > 0) {
                     // AWS credentials and configuration   
                     $region = 'us-east-1';
-                    $accessKeyId = 'AKIAXNGBMHCXRAGF6Q57';
-                    $secretAccessKey = '7fD8ZlbuysjLahQJlZdxr6eZWcFwiyojWuTLMMXf';
+                    $accessKeyId = '';
+                    $secretAccessKey = '';
                     $queueUrl = 'your-sqs-queue-url';
 
                     // Create SQSProcessor instance
