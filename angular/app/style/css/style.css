@@ -11,6 +11,13 @@
     width: 100%;
 }
 
+.but{
+    display: flex !important;
+    justify-content: flex-end !important;
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
+
 .heading {
     width: 100%;
     margin-bottom: 40px;

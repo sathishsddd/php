@@ -1,14 +1,10 @@
 // Initialize the AngularJS application
 var myApp = angular.module('myApp', ['ngRoute']);
 
-myApp.controller('mainCtrl', ['$scope','$rootScope', function ($scope,$rootScope) {
+myApp.controller('mainCtrl', ['$scope', function ($scope) {
     $scope.sample = "data";
-    // $rootScope.room={
-    //     room:"1"
-    // };
- 
 }]);
-
+  
 // Configure the routes
 myApp.config(['$routeProvider', function ($routeProvider) {
     $routeProvider
@@ -62,7 +58,51 @@ myApp.config(['$routeProvider', function ($routeProvider) {
             templateUrl: 'app/view/view2.html',
             controller: 'ViewController' 
         })
+        .when('/image',{
+            templateUrl: 'app/view/image.html',
+            controller: 'image' 
+        })
         
         .otherwise({ redirectTo: '/login' });
-
 }]);
+
+
+// myApp.run(['$rootScope', '$location', 'AuthService', function($rootScope, $location, AuthService) {
+//     $rootScope.$on('$routeChangeStart', function(event, next, current) {
+//       if (next ) {
+//         // Check if the user is logged in
+//         if (!AuthService.isLoggedIn()) {
+//           // Redirect to the login page if not logged in
+//           $location.path('/login');
+//         }
+//       }
+//     });
+  
+//     $rootScope.$on('$locationChangeStart', function(event, next, current) {
+//       // Check if the user is logged in
+//       if (!AuthService.isLoggedIn()) {
+//         // Prevent forward and backward navigation
+//         // event.preventDefault(); 
+//         $location.path('/login');
+//         // Redirect to the login page
+//       }
+//     });
+//   }]);
+
+// myApp.service('AuthService', function() {
+//     var isAuthenticated = false;
+
+//     this.isLoggedIn = function(){
+//         return isAuthenticated;
+//     }
+
+//     this.login = function(){
+//         isAuthenticated = true;
+//     }
+
+//     this.logout = function(){
+//         isAuthenticated = false;
+//     }
+//   });
+
+

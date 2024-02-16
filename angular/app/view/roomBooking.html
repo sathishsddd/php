@@ -1,7 +1,10 @@
 <link rel="stylesheet" href="app/style/css/style.css">
 
 
-<div class="main" ng-controller="MyCtrl">
+<div class="main">
+    <div class="but">
+        <button ng-click="logout()">Log Out</button>
+    </div>
     <div class="main-sub" ng-show="showMainSub">
         <div class="heading d-flex justify-content-center">
             <header>Room booking details</header>
@@ -256,10 +259,11 @@
                                     <div class=" d-flex flex-column form1">
                                         <label for="checkOutDate" class="form-label">Expected Check-Out date</label>
                                         <input type="text" class="form-control" id="checkOutDate" name="checkOutDate"
-                                            ng-model="room.checkOutDate" ng-required="true"  min="{{ today | date:'yyyy-MM-dd' }}"
+                                            ng-model="room.checkOutDate" ng-required="true"
+                                            min="{{ today | date:'yyyy-MM-dd' }}"
                                             placeholder="Choose Expected Check-Out date" onfocus="{this.type='date'}"
                                             apply-error-class date-validator check-in-date="room.checkInDate">
-                                            <span class="error2"
+                                        <span class="error2"
                                             ng-show="myForm2.checkOutDate.$error.dateValidator && !myForm2.checkOutDate.$error.required">Check-out
                                             date must be greater than check-in date
                                             .</span>
@@ -365,6 +369,7 @@
                             </div>
 
                         </div>
+                    </div>
                 </form>
             </div>
         </div>

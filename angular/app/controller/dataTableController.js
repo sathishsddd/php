@@ -1,45 +1,27 @@
 
-myApp.controller('dtCtrl', ['$scope', '$location', '$timeout', '$location','$rootScope', function ($scope, $location, $timeout, $location,$rootScope) {
-  var ownerName = localStorage.storedOwnerName;
-  $scope.ownerName = ownerName;
-  var roomBookingData = JSON.parse(localStorage.getItem('roomBookingData'));
-  // to check that user is booked any rooms
-  if (!roomBookingData) {
-    const message = `No Bookings yet.`;
-    $('#message').text(message);
-    $('#signInModal').modal('show');
-    $timeout(function () {
-      $('.modal-backdrop').remove();
-      $location.path('/room2');
-    }, 2000);
+myApp.controller('dtCtrl', ['$scope', '$location', '$timeout', '$location','$http', function ($scope, $location, $timeout, $location,$http) {
 
-  } else {
-    // to get user who booked the particular owner rooms
-    $scope.roomBookingData2 = [];
-    for (let index = 0; index < roomBookingData.length; index++) {
-      var data = roomBookingData[index];
-      if (data.ownerName == ownerName) {
-        $scope.roomBookingData2.push(roomBookingData[index]);
-      }
+  $http({
+    method: 'GET',
+    url: 'http://localhost/Mystudio_webapp/angular/API/Controller/controller.php/getOwnerBookings',
+    params: {
+      id:  localStorage.userId
     }
-  }
-
-  // to ckeck any user booked that particular owner room
-  if ($scope.roomBookingData2.length === 0) {
-    const message = `No Bookings yet.`;
-    $('#message').text(message);
-    $('#signInModal').modal('show');
-    $timeout(function () {
-      $('.modal-backdrop').remove();
-      $location.path('/room2');
-    }, 2000);
-  }
-
-  localStorage.setItem('roomBookingData2', JSON.stringify($scope.roomBookingData2));
-  $scope.roomBookingData2 = JSON.parse(localStorage.getItem('roomBookingData2'));
+  }).then(function (response) {
+    $scope.roomBookingData2 = response.data;
+    initializeDataTable();
+  }).catch(function(error){
+     $scope.roomBookingData2=[];
+     initializeDataTable();
+     if(error.status == 403){
+      $('#img').attr('src', "app/style/image/incorrect.png");
+      const message = error.data.message;
+      $('#message').text(message);
+      $('#signInModal').modal('show');
+     }
+  })
 
   $scope.focusedRow = -1;
-
   $scope.focusImage = function (index) {
     $scope.focusedRow = index;
   };
@@ -72,8 +54,9 @@ myApp.controller('dtCtrl', ['$scope', '$location', '$timeout', '$location','$roo
   // }
 
   var table;
-  $(document).ready(function () {
-    if (!DataTable.isDataTable('#example')) {
+  function initializeDataTable(){
+   $(document).ready(function () {
+    if (!$.fn.DataTable.isDataTable('#example')) {
       table = $('#example').DataTable({
         "paging": true,
         "pagingType": "simple_numbers",
@@ -125,6 +108,7 @@ myApp.controller('dtCtrl', ['$scope', '$location', '$timeout', '$location','$roo
       });
     }
   });
+}
 
 }]);
 

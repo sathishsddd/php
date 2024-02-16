@@ -3,9 +3,6 @@
 
         <div class="modal-head">
             <input type="button" value="Cancel" class="btn pop-up-btn" data-dismiss="modal" aria-label="Close" />
-            <!-- <div class="success-msg">
-                <span ng-show="$ctrl.formSubmitted">Student Updated </span>
-             </div> -->
         </div>
 
         <div class="edit-modal-body">
@@ -26,8 +23,8 @@
                 </div>
                 <div class="edit-modal-data">
                     <label for="gender">Gender</label>
-                    <select class="form-control" id="gender" ng-model="$ctrl.userDetail.selectedGender"
-                        ng-required="true" placeholder="{{$ctrl.userDetail.selectedGender}}">
+                    <select class="form-control" id="gender" ng-model="$ctrl.userDetail.selected_gender"
+                        ng-required="true" placeholder="{{$ctrl.userDetail.selected_gender}}">
                         <!-- <option value="" disabled>Select Gender</option> -->
                         <option>Male</option>
                         <option>Female</option>
@@ -41,16 +38,18 @@
 
                 <div class="edit-modal-data">
                     <label for="datepicker-modal">Check-in Date</label>
-                    <input type="text" id="datepicker-modal" class="form-control date-input" ng-model="$ctrl.userDetail.checkInDate"  ng-click="openDatePicker()">
+                    <input type="text" id="datepicker-modal" class="form-control date-input"
+                        ng-model="$ctrl.userDetail.check_in_date">
                 </div>
                 <div class="edit-modal-data">
                     <label for="datepicker-modal2">Check-out Date</label>
-                    <input type="text" id="datepicker-modal2" class="form-control date-input" ng-model="$ctrl.userDetail.checkOutDate" ng-click="openDatePicker()">
+                    <input type="text" id="datepicker-modal2" class="form-control date-input"
+                        ng-model="$ctrl.userDetail.check_out_date" ng-click="openDatePicker()">
                 </div>
                 <div class="edit-modal-data">
                     <label for="roomType">Room Type</label>
-                    <select class="form-control" id="roomType" ng-model="$ctrl.userDetail.roomType" ng-required="true"
-                        placeholder="{{$ctrl.userDetail.roomType}}">
+                    <select class="form-control" id="roomType" ng-model="$ctrl.userDetail.room_type" ng-required="true"
+                        placeholder="{{$ctrl.userDetail.room_type}}">
                         <option value="" disabled>Select RoomType</option>
                         <option>AC</option>
                         <option>NON-AC</option>
@@ -58,8 +57,8 @@
                 </div>
                 <div class="edit-modal-data">
                     <label for="roomSize">Room Size</label>
-                    <select class="form-control" id="roomSize" ng-model="$ctrl.userDetail.selectedRoomSize"
-                        ng-required="true" placeholder="{{$ctrl.userDetail.selectedRoomSize}}">
+                    <select class="form-control" id="roomSize" ng-model="$ctrl.userDetail.selected_room_size"
+                        ng-required="true" placeholder="{{$ctrl.userDetail.selected_room_size}}">
                         <option value="" disabled>Select RoomSize</option>
                         <option>1 bed room</option>
                         <option>2 bed room</option>
@@ -69,8 +68,8 @@
                 </div>
                 <div class="edit-modal-data">
                     <label for="idType">Id Type</label>
-                    <select class="form-control" id="idType" ng-model="$ctrl.userDetail.selectIdTypes"
-                        ng-required="true" placeholder="{{$ctrl.userDetail.selectIdTypes}}">
+                    <select class="form-control" id="idType" ng-model="$ctrl.userDetail.select_id_types"
+                        ng-required="true" placeholder="{{$ctrl.userDetail.select_id_types}}">
                         <option disabled>Select ID Type</option>
                         <option>Aadhar card</option>
                         <option>PAN Card</option>
@@ -86,14 +85,13 @@
                     <label for="purpose">Purpose</label>
                     <input type="text" id="purpose" class="form-control" ng-model="$ctrl.userDetail.purpose">
                 </div>
-
             </form>
 
-         <div class="bttn">
-            <button type="submit" ng-click="$ctrl.onSubmit($ctrl.userDetail)" >Submit</button>
-         </div>
+            <div class="bttn">
+                <button type="submit" ng-click="$ctrl.onSubmit($ctrl.userDetail)">Submit</button>
+            </div>
 
         </div>
     </div>
-   
+
 </div>

@@ -20,7 +20,7 @@ class EmailService{
     }
 
     //this is the function used to send email.
-    public function sendEmail() {
+    public function sendEmail($userData) {
         try {
             //Server settings
             $this->mailer->isSMTP();
@@ -45,14 +45,20 @@ class EmailService{
             // $this->mailer->addAttachment($pdfFilePath, 'Generated_PDF_File.pdf');
 
             // Check if the recipient's email ends with 'gmail.com' and select the appropriate template
-            if (strpos($recipient, 'gmail.com') !== false) {
+            if (strpos($recipient, 'gmail') !== false) {
                 // Load the Gmail template
                 $htmlContent = file_get_contents('/opt/lampp/htdocs/Mystudio_webapp/angular/app/view/gmailTemplate.html');
-            } elseif (strpos($recipient, 'yahoo.com') !== false) {
+            } elseif (strpos($recipient, 'yahoo') !== false) {
                 // Load the Yahoo template
                 $htmlContent = file_get_contents('/opt/lampp/htdocs/Mystudio_webapp/angular/app/view/yahooTemplate.html');
+            }else{
+                // Load the default template
+                $htmlContent = file_get_contents('/opt/lampp/htdocs/Mystudio_webapp/angular/app/view/defaultTemplate.html');
             }
             //set hmtl content according to the type of mail.
+            $htmlContent = str_replace('name',$userData['user_name'],$htmlContent);
+            $htmlContent = str_replace('email',$userData['email'],$htmlContent);
+            $htmlContent = str_replace('phno',$userData['phone_number'],$htmlContent);
             $this->mailer->Body  = $htmlContent;
             if ($this->mailer->send()) {
                 return true;
@@ -60,8 +66,6 @@ class EmailService{
                 Logger::log_api("Email could not be sent. Error: " . $this->mailer->ErrorInfo);
                 return false;
             }
-            // $this->mailer->send();
-            // return true;
         } catch (Throwable $e) {
             //log exeception message to the logger api
             Logger::log_api("Email sending failed with an exception: " . $e->getMessage());

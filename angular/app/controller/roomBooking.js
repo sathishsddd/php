@@ -1,6 +1,6 @@
 
 
-myApp.controller('MyCtrl', ['$scope', '$rootScope', '$timeout', '$location', function ($scope, $rootScope, $timeout, $location) {
+myApp.controller('MyCtrl', ['$scope', '$http', '$timeout', '$location','roomBookingDataService', function ($scope, $http, $timeout, $location,roomBookingDataService) {
   $scope.today = new Date();
   $scope.today.setDate($scope.today.getDate() + 1);
 
@@ -21,13 +21,6 @@ myApp.controller('MyCtrl', ['$scope', '$rootScope', '$timeout', '$location', fun
     checkOutTime: '',
     selectCateringTypes: '',
     selectLaundryTypes: '',
-    ownerName: '',
-    userName: ''
-  }
-
-  if ($rootScope.room) {
-    $scope.room = $rootScope.room;
-    $scope.room.roomType = "AC";
   }
 
   // options for gender
@@ -37,7 +30,7 @@ myApp.controller('MyCtrl', ['$scope', '$rootScope', '$timeout', '$location', fun
   $scope.idTypes = ["Aadhar card", "Voter ID", "PAN Card", "Driving Licence"]
 
   // to show the additional requirement page
-  $scope.showMainSub = true; 
+  $scope.showMainSub = true;
   $scope.showMain1 = false;
 
   $scope.goToAdditionalRequirements = function () {
@@ -65,15 +58,62 @@ myApp.controller('MyCtrl', ['$scope', '$rootScope', '$timeout', '$location', fun
 
   $scope.saveRoomDetails = function () {
     if ($scope.myForm2.$valid) {
-      $rootScope.room = $scope.room;
-      $location.path('/showRooms');
+      $http({
+        method: 'POST',
+        url: 'http://localhost/Mystudio_webapp/angular/API/Controller/controller.php?action=insertBookingDetails',
+        data: $scope.room,
+        params: {
+          id: localStorage.userId
+        },
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        transformResponse: [function (data) {
+          return data;
+        }]
+      }).then(function (response) {
+        if (response.data) {
+          // Set the response data in the service
+          // roomBookingDataService.setResponseData(JSON.parse(response.data).data);
+          localStorage.setItem('responseData', response.data);
+          $location.path('/showRooms');
+        }
+      }).catch(function (error) {
+        console.log(error);
+      });
     }
   };
 
   $scope.viewBooking = function () {
     $location.path('/dataTable2');
   };
+
+  $scope.logout = function(){
+    $http({
+      method: 'GET',
+      url: 'http://localhost/Mystudio_webapp/angular/API/Controller/controller.php/logout'
+    }).then(function(response){
+        $location.path('/login');
+    }).catch(function(error){
+       console.log(error.data.message);
+    })
+  }
 }]);
+
+// custom service to store the roomBookingData
+myApp.service('roomBookingDataService', function () {
+  var responseData = JSON.parse(localStorage.getItem('responseData')) || null;
+
+  return {
+    getResponseData: function () {
+      return responseData;
+    },
+    setResponseData: function (data) {
+      responseData = data;
+      // localStorage.setItem('responseData', JSON.stringify(data));
+    }
+  };
+});
 
 // custom filter to validate the name input
 // myApp.filter('isAlphabet', function() {

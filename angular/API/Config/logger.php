@@ -1,7 +1,6 @@
 <?php
 
 class Logger{
-
     public static function log_api($message){
         date_default_timezone_set('Asia/Kolkata');
           // Define the log file path

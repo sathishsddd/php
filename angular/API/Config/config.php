@@ -10,7 +10,7 @@ class Config{
     private $password = "";
     private $database = "stay_flex";
 
-    public function dbConnect(){
+    public function dbConnect(){    
         try{
             $conn = new mysqli($this->host,$this->userName,$this->password,$this->database);
             // connect_error -> Returns the error message from the last connection attempt.
@@ -21,7 +21,6 @@ class Config{
             return $conn;
         }catch(Throwable $e){
             Logger::log_api($e->getMessage());
-            // die("Connection error :".$e->getMessage());
         }
     }
 }

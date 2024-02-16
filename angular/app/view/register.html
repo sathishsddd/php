@@ -1,6 +1,6 @@
 <link rel="stylesheet" href="app/style/css/login.css">
 
-<div class="register d-flex justify-content-center"  ng-controller="loginCtrl" >
+<div class="register d-flex justify-content-center">
     <div class="register1 d-flex ">
         <div class="container-fluid">
             <div class="row justify-content-between">
@@ -16,66 +16,87 @@
                             <p>Already have an account? <a href="#!/login"> Sign in</a></p>
                         </div>
                     </div>
-                </div>  
+                </div>
                 <div class="col-lg-5 col-md-12 col-sm-12 d-flex p-0 registerr">
                     <div class="registerrm">
                         <div class="buttonr">
-                            <div class="toggle-button2 " ng-class="{active: activeButton2 === 'button3'}" ng-click="toggleError();toggleUser('Owner');toggleButton2('button3')" id="button3">Owner</div>
-                            <div class="toggle-button2"ng-class="{active: activeButton2 === 'button4'}" ng-click="toggleError();toggleUser('Customer');toggleButton2('button4')" id="button4">Customer</div>
+                            <div class="toggle-button2 " ng-class="{active: activeButton2 === 'button3'}"
+                                ng-click="toggleError();toggleUser('Owner');toggleButton2('button3')" id="button3">Owner
+                            </div>
+                            <div class="toggle-button2" ng-class="{active: activeButton2 === 'button4'}"
+                                ng-click="toggleError();toggleUser('Customer');toggleButton2('button4')" id="button4">
+                                Customer</div>
                         </div>
                         <div class="registerform">
                             <form name="myForm2" novalidate>
                                 <div class=" d-flex flex-column registerform1">
                                     <label for="userName" class="form-label m-0">Username</label>
-                                    <input type="text" class="form-control" id="userName" name="name"   ng-model="user.userName" ng-required="true"
+                                    <input type="text" class="form-control" id="userName" name="name"
+                                        ng-blur="checkUserName()" ng-model="user.userName" ng-required="true"
                                         placeholder="Enter username">
-                                        <span class="error" ng-show=" myForm2.name.$valid && !(user.userName | isAlphabet) &&showError2">Name must
-                                            contain only alphabets.</span> 
-                                        <span class="error" 
-                                            ng-show="showError&& myForm2.$submitted && myForm2.name.$error.required">Name is
-                                            required.</span>
+                                    <span class="error"
+                                        ng-show="myForm2.name.$valid && !(user.userName | isAlphabet) &&showError2">Name
+                                        must
+                                        contain only alphabets.</span>
+                                    <span class="error"
+                                        ng-show="showError&& myForm2.$submitted && myForm2.name.$error.required">Name is
+                                        required.</span>
+                                    <span class="error" ng-show="myForm2.name.$error.uniqueUsername">UserName Already
+                                        Exist.</span>
                                 </div>
                                 <div class=" d-flex flex-column registerform1">
                                     <label for="email" class="form-label m-0">Email ID</label>
-                                    <input type="text" class="form-control" id="email" name="email" ng-model="user.email" placeholder="Enter Email" ng-change="validateEmail()" ng-required="true">
-                                    <span class="error" >{{ validationMessage }}</span>
-                                <span class="error" 
-                                    ng-show="showError&&myForm2.$submitted && myForm2.email.$error.required">Email is
-                                    required.</span>
+                                    <input type="text" class="form-control" id="email" name="email"
+                                        ng-model="user.email" placeholder="Enter Email" ng-change="validateEmail()"
+                                        ng-required="true">
+                                    <span class="error">{{ validationMessage }}</span>
+                                    <span class="error"
+                                        ng-show="showError&&myForm2.$submitted && myForm2.email.$error.required">Email
+                                        is
+                                        required.</span>
                                 </div>
                                 <div class=" d-flex flex-column registerform1">
                                     <label for="number" class="form-label m-0">Phone Number</label>
-                                    <input type="number" class="form-control" id="number" name="number" ng-model="user.phoneNumber" ng-minlength="8" ng-maxlength="10"
+                                    <input type="number" class="form-control" id="number" name="number"
+                                        ng-model="user.phoneNumber" ng-minlength="8" ng-maxlength="10"
                                         placeholder="Enter Phone Number" ng-required="true">
-                                        <span class="error"  ng-show="showError&&myForm2.number.$error.minlength">Minimum 8 digits
-                                            required.</span>
-                                        <span class="error"  ng-show="showError&&myForm2.number.$error.maxlength">Maximum 10 digits
-                                            only allowed.</span>
-                                        <span class="error" 
-                                            ng-show="showError&&myForm2.$submitted && myForm2.number.$error.required">PhoneNumber is
-                                            required.</span>
+                                    <span class="error" ng-show="showError&&myForm2.number.$error.minlength">Minimum 8
+                                        digits
+                                        required.</span>
+                                    <span class="error" ng-show="showError&&myForm2.number.$error.maxlength">Maximum 10
+                                        digits
+                                        only allowed.</span>
+                                    <span class="error"
+                                        ng-show="showError&&myForm2.$submitted && myForm2.number.$error.required">PhoneNumber
+                                        is
+                                        required.</span>
                                 </div>
                                 <div class=" d-flex flex-column registerform1">
                                     <label for="password" class="form-label m-0">Password</label>
-                                    <input type="password" class="form-control" id="password" name="password" ng-model="user.password" ng-minlength="6"
-                                        placeholder="Enter Password" ng-required="true">
-                                        <span class="error"  ng-show="myForm2.password.$error.minlength">Minimum 6 characters
-                                            required.</span>
-                                            <span class="error" 
-                                            ng-show="showError&&myForm2.$submitted && myForm2.password.$error.required">password is
-                                            required.</span>
+                                    <input type="password" class="form-control" id="password" name="password"
+                                        ng-model="user.password" ng-minlength="6" placeholder="Enter Password"
+                                        ng-required="true">
+                                    <span class="error" ng-show="myForm2.password.$error.minlength">Minimum 6 characters
+                                        required.</span>
+                                    <span class="error"
+                                        ng-show="showError&&myForm2.$submitted && myForm2.password.$error.required">password
+                                        is
+                                        required.</span>
                                 </div>
                                 <div class=" d-flex flex-column registerform1">
                                     <label for="password2" class="form-label m-0">Re-Enter Password</label>
-                                    <input type="password" class="form-control" id="password2" name="password2" ng-model="user.rePassword" ng-change="validatePassword()"
+                                    <input type="password" class="form-control" id="password2" name="password2"
+                                        ng-model="user.rePassword" ng-change="validatePassword()"
                                         placeholder="Re-Enter Password" ng-required="true">
-                                    <span  class="error" >{{validationMessage2}}</span>
-                                    <span class="error" 
-                                    ng-show="showError2&&myForm2.$submitted && myForm2.password2.$error.required">Re-password is
-                                    required.</span>
+                                    <span class="error">{{validationMessage2}}</span>
+                                    <span class="error"
+                                        ng-show="showError2&&myForm2.$submitted && myForm2.password2.$error.required">Re-password
+                                        is
+                                        required.</span>
                                 </div>
                                 <div class="text-center mt-5 signup">
-                                    <button type="button" class="signup-button" id="button5" ng-click="validateInputs()">Sign Up</button>
+                                    <button type="submit" class="signup-button" id="button5"
+                                        ng-click="validateInputs()">Sign Up</button>
                                 </div>
                             </form>
                         </div>
@@ -84,12 +105,11 @@
             </div>
         </div>
     </div>
-
-
 </div>
+
 <div class="account">
     <div class="account1">
-        <p>Already have an account? <a  href="#!/login">Sign In</a> </p>
+        <p>Already have an account? <a href="#!/login">Sign In</a> </p>
     </div>
 </div>
 

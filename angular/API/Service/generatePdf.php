@@ -23,5 +23,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // The stream method sends the generated PDF content to the client's browser.
     $pdfFileName = 'user_registration_details.pdf';
     $dompdf->stream($pdfFileName);
+    // The stream method in dompdf is used to send the generated PDF file directly to the browser.
 }
 ?>

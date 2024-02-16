@@ -1,0 +1,12 @@
+<div>
+   <form>
+    <input type="text" name="namee" ng-model="data.namee">
+    <input type="file" name="image" onchange="angular.element(this).scope().fileChanged(this)" >
+    <button type="submit" ng-click="upload()">upload</button>
+   </form>
+
+   <div>
+       <img ng-src="{{image.image}}" alt="hi">
+   </div>
+   <button type="submit" ng-click="get()">Get Image</button>
+</div>

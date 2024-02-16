@@ -153,6 +153,9 @@ background-color: #F2F5FA !important;
 table.dataTable.display tbody tr:hover {
 background-color:  #F2F5FA !important ;
 }
+#img{
+  width: 10%;
+}
 
 
 .editImg img{

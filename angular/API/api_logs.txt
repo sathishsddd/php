@@ -1,408 +1,517 @@
-[2023-12-28 11:35:15] Success response in : getAllUserDetails
-[2023-12-28 11:35:28] Unknown Endpoint for GET URL : /Mystudio_webapp/AngularJS_Unit2_6/API/Controller/controller.php/getAllUse
-[2023-12-28 11:35:39] Success response in : getAllUserDetails
-[2023-12-28 11:41:53] Success response in : getCustomerByName
-[2023-12-28 11:44:04] UserData inserted Into DB
-[2023-12-28 11:51:01] Error in : updateCustomerDetails : Duplicate entry '989428742' for key 'phone_number'
-[2023-12-28 11:51:01] Error in updating customer data
-[2023-12-28 11:51:11] Success Response : Customer data updated
-[2023-12-28 11:58:25] User data deleted for UserName : Dhinesh in deleteCustomerByName
-[2023-12-28 11:58:43] User data not found in : deleteCustomerByName
-[2023-12-28 12:05:06] UserData inserted Into DB
-[2023-12-28 12:05:08] Error in : insertUserDetails : Duplicate entry '839483948' for key 'phone_number'
-[2023-12-28 12:05:08] Error inserting UserData Into DB
-[2023-12-28 13:23:29] Success response in : getCustomerByName
-[2023-12-28 13:23:30] Success response in : getCustomerByName
-[2023-12-28 13:24:41] Success response in : getCustomerByName
-[2023-12-28 13:27:09] Success response in : getCustomerByName
-[2023-12-28 13:31:04] Success response in : getAllUserDetails
-[2023-12-28 13:32:19] Success response in : getAllUserDetails
-[2023-12-28 13:32:43] Error in : insertUserDetails : Duplicate entry 'Dhinesh' for key 'user_name'
-[2023-12-28 13:32:43] Error inserting UserData Into DB
-[2023-12-28 13:32:54] User data deleted for UserName : Dhinesh in deleteCustomerByName
-[2023-12-28 13:32:58] UserData inserted Into DB
-[2023-12-28 13:33:02] User data deleted for UserName : Dhinesh in deleteCustomerByName
-[2023-12-28 13:33:14] Error in : insertUserDetails : Class "EmailService" not found
-[2023-12-28 13:33:14] Error inserting UserData Into DB
-[2023-12-28 13:35:34] Success response in : getAllUserDetails
-[2023-12-28 13:48:15] Success response in : getAllUserDetails
-[2023-12-28 13:49:27] Success response in : getAllUserDetails
-[2023-12-28 13:49:28] Success response in : getAllUserDetails
-[2023-12-28 13:50:13] Success response in : getAllUserDetails
-[2023-12-28 13:50:42] Success response in : getAllUserDetails
-[2023-12-28 13:50:44] Success response in : getAllUserDetails
-[2023-12-28 13:50:45] Success response in : getAllUserDetails
-[2023-12-28 13:50:47] Success response in : getAllUserDetails
-[2023-12-28 13:51:13] Success response in : getCustomerByName
-[2023-12-28 13:51:13] Success response in : getCustomerByName
-[2023-12-28 13:51:14] Success response in : getCustomerByName
-[2023-12-28 13:51:24] Error in : insertUserDetails : Duplicate entry '8394839433' for key 'phone_number'
-[2023-12-28 13:51:24] Error inserting UserData Into DB
-[2023-12-28 13:51:36] User data deleted for UserName : Dhinesh in deleteCustomerByName
-[2023-12-28 13:51:45] Email sent successfully
-[2023-12-28 13:51:45] UserData inserted Into DB
-[2023-12-28 13:52:51] Success response in : getAllUserDetails
-[2023-12-28 13:53:12] Success response in : getAllUserDetails
-[2023-12-28 13:53:13] Success response in : getAllUserDetails
-[2023-12-28 13:53:14] Success response in : getAllUserDetails
-[2023-12-28 13:53:15] Success response in : getAllUserDetails
-[2023-12-28 13:53:25] Success response in : getAllUserDetails
-[2023-12-28 13:55:21] Success response in : getAllUserDetails
-[2023-12-28 13:55:57] Success response in : getAllUserDetails
-[2023-12-28 13:55:58] Success response in : getAllUserDetails
-[2023-12-28 14:11:43] Success response in : getAllUserDetails
-[2023-12-28 14:26:40] Success response in : getCustomerByName
-[2023-12-28 14:26:40] Success response in : getCustomerByName
-[2023-12-28 14:26:41] Success response in : getCustomerByName
-[2023-12-28 16:24:54] Error : Invalid login credential.
-[2023-12-28 16:25:20] User logged in successful.
-[2023-12-28 16:26:21] Error : Invalid login credential.
-[2023-12-28 16:28:03] Error : Invalid login credential.
-[2023-12-28 16:28:28] User logged in successful.
-[2023-12-28 16:28:35] Error : Invalid login credential.
-[2023-12-28 16:35:29] Error : Invalid login credential.
-[2023-12-28 16:35:49] User logged in successful.
-[2023-12-28 18:11:42] Error in : insertUserDetails : Duplicate entry 'Suresh' for key 'user_name'
-[2023-12-28 18:11:42] Error inserting UserData Into DB
-[2023-12-28 18:11:59] Error in : insertUserDetails : Duplicate entry 'Suresh' for key 'user_name'
-[2023-12-28 18:11:59] Error inserting UserData Into DB
-[2023-12-28 18:12:25] Error in : insertUserDetails : Duplicate entry 'Suresh' for key 'user_name'
-[2023-12-28 18:12:25] Error inserting UserData Into DB
-[2023-12-28 18:12:38] Email sending failed with an exception: SMTP Error: Could not connect to SMTP host. Failed to connect to server
-[2023-12-28 18:12:38] Email not sent
-[2023-12-28 18:12:38] UserData inserted Into DB
-[2023-12-28 18:12:54] Error in : insertUserDetails : Duplicate entry '8394833422' for key 'phone_number'
-[2023-12-28 18:12:54] Error inserting UserData Into DB
-[2023-12-28 18:13:48] Email sending failed with an exception: SMTP Error: Could not connect to SMTP host. Failed to connect to server
-[2023-12-28 18:13:48] Email not sent
-[2023-12-28 18:13:48] UserData inserted Into DB
-[2023-12-28 18:14:23] No updated values in : updateCustomerDetails
-[2023-12-28 18:14:23] Error in updating customer data
-[2023-12-28 18:14:51] Success Response : Customer data updated
-[2023-12-28 18:24:17] No updated values in : updateCustomerDetails
-[2023-12-28 18:24:17] Error in updating customer data
-[2023-12-28 18:25:28] Customer data not found for : RAg
-[2023-12-28 18:25:28] Error in updating customer data
-[2023-12-28 18:25:51] Customer data not found for : RAg
-[2023-12-28 18:25:51] Error in updating customer data
-[2023-12-28 18:27:35] Customer data not found for : RAg
-[2023-12-28 18:27:35] Error in updating customer data
-[2023-12-28 18:27:36] Customer data not found for : RAg
-[2023-12-28 18:27:36] Error in updating customer data
-[2023-12-28 18:27:37] Customer data not found for : RAg
-[2023-12-28 18:27:37] Error in updating customer data
-[2023-12-28 18:27:38] Customer data not found for : RAg
-[2023-12-28 18:27:38] Error in updating customer data
-[2023-12-28 18:27:39] Customer data not found for : RAg
-[2023-12-28 18:27:39] Error in updating customer data
-[2023-12-28 18:27:39] Customer data not found for : RAg
-[2023-12-28 18:27:39] Error in updating customer data
-[2023-12-28 18:27:39] Customer data not found for : RAg
-[2023-12-28 18:27:39] Error in updating customer data
-[2023-12-28 18:27:40] Customer data not found for : RAg
-[2023-12-28 18:27:40] Error in updating customer data
-[2023-12-28 18:27:40] Customer data not found for : RAg
-[2023-12-28 18:27:40] Error in updating customer data
-[2023-12-28 18:27:41] Customer data not found for : RAg
-[2023-12-28 18:27:41] Error in updating customer data
-[2023-12-28 18:28:03] Customer data not found for : RAg
-[2023-12-28 18:28:03] Error in updating customer data
-[2023-12-28 18:28:04] Customer data not found for : RAg
-[2023-12-28 18:28:04] Error in updating customer data
-[2023-12-28 18:28:04] Customer data not found for : RAg
-[2023-12-28 18:28:04] Error in updating customer data
-[2023-12-28 18:28:18] Customer data not found for : RAg
-[2023-12-28 18:28:18] Error in updating customer data
-[2023-12-28 18:28:19] Customer data not found for : RAg
-[2023-12-28 18:28:19] Error in updating customer data
-[2023-12-28 18:28:19] Customer data not found for : RAg
-[2023-12-28 18:28:19] Error in updating customer data
-[2023-12-28 18:28:19] Customer data not found for : RAg
-[2023-12-28 18:28:19] Error in updating customer data
-[2023-12-28 18:56:59] Success response in : getCustomerByName
-[2023-12-29 10:38:10] Success response in : getAllUserDetails
-[2023-12-29 10:38:17] Success response in : getCustomerByName
-[2023-12-29 10:41:24] Error : Invalid login credential.
-[2023-12-29 10:41:34] Error : Invalid login credential.
-[2023-12-29 10:41:50] User logged in successful.
-[2023-12-29 10:46:19] User logged in successful.
-[2023-12-29 10:46:20] User logged in successful.
-[2023-12-29 10:46:21] User logged in successful.
-[2023-12-29 10:46:22] User logged in successful.
-[2023-12-29 10:46:30] Error : Invalid login credential.
-[2023-12-29 10:46:52] User logged in successful.
-[2023-12-29 10:50:58] Error : Invalid login credential.
-[2023-12-29 10:51:19] Error : Invalid login credential.
-[2023-12-29 10:51:43] Error : Invalid login credential.
-[2023-12-29 10:55:18] Error : Invalid login credential.
-[2023-12-29 10:56:02] User logged in successful.
-[2023-12-29 10:56:58] User logged in successful.
-[2023-12-29 10:57:03] Error : Invalid login credential.
-[2023-12-29 10:57:06] Error : Invalid login credential.
-[2023-12-29 10:57:06] Error : Invalid login credential.
-[2023-12-29 10:57:06] Error : Invalid login credential.
-[2023-12-29 10:57:23] Error : Invalid login credential.
-[2023-12-29 10:58:26] Error : Invalid login credential.
-[2023-12-29 10:58:29] Error : Invalid login credential.
-[2023-12-29 10:58:29] Error : Invalid login credential.
-[2023-12-29 10:58:29] Error : Invalid login credential.
-[2023-12-29 10:58:29] Error : Invalid login credential.
-[2023-12-29 10:58:30] Error : Invalid login credential.
-[2023-12-29 10:58:30] Error : Invalid login credential.
-[2023-12-29 10:58:30] Error : Invalid login credential.
-[2023-12-29 10:59:48] Error : Invalid login credential.
-[2023-12-29 10:59:49] Error : Invalid login credential.
-[2023-12-29 10:59:49] Error : Invalid login credential.
-[2023-12-29 10:59:49] Error : Invalid login credential.
-[2023-12-29 10:59:50] Error : Invalid login credential.
-[2023-12-29 10:59:50] Error : Invalid login credential.
-[2023-12-29 11:00:56] User logged in successful.
-[2023-12-29 11:03:43] User logged in successful.
-[2023-12-29 11:03:45] User logged in successful.
-[2023-12-29 11:03:49] User logged in successful.
-[2023-12-29 11:03:49] User logged in successful.
-[2023-12-29 11:03:49] User logged in successful.
-[2023-12-29 11:03:50] User logged in successful.
-[2023-12-29 11:03:50] User logged in successful.
-[2023-12-29 11:04:20] User logged in successful.
-[2023-12-29 11:04:20] User logged in successful.
-[2023-12-29 11:04:21] User logged in successful.
-[2023-12-29 11:04:21] User logged in successful.
-[2023-12-29 11:04:58] User logged in successful.
-[2023-12-29 11:05:15] User logged in successful.
-[2023-12-29 11:06:20] User logged in successful.
-[2023-12-29 11:08:37] User logged in successful.
-[2023-12-29 11:14:10] User logged in successful.
-[2023-12-29 11:14:33] User logged in successful.
-[2023-12-29 11:14:47] Error : Invalid login credential.
-[2023-12-29 11:23:07] User logged in successful.
-[2023-12-29 11:32:33] User logged in successful.
-[2023-12-29 11:34:27] User logged in successful.
-[2023-12-29 12:38:51] User logged in successful.
-[2023-12-29 12:39:25] Customer data not found for : RAg
-[2023-12-29 12:39:25] Error in updating customer data
-[2023-12-29 12:39:35] No updated values in : updateCustomerDetails
-[2023-12-29 12:39:35] Error in updating customer data
-[2023-12-29 12:54:00] Email sent successfully
-[2023-12-29 12:54:00] UserData inserted Into DB
-[2023-12-29 12:55:07] Error in : insertUserDetails : Duplicate entry 'Manoj' for key 'user_name'
-[2023-12-29 12:55:07] Error inserting UserData Into DB
-[2023-12-29 12:55:58] Email sent successfully
-[2023-12-29 12:55:58] UserData inserted Into DB
-[2023-12-29 14:46:06] Email sent successfully
-[2023-12-29 14:46:06] UserData inserted Into DB
-[2023-12-29 14:47:53] Email sent successfully
-[2023-12-29 14:47:53] UserData inserted Into DB
-[2023-12-29 14:52:10] Email sent successfully
-[2023-12-29 14:52:10] UserData inserted Into DB
-[2023-12-29 14:54:24] Email sent successfully
-[2023-12-29 14:54:24] UserData inserted Into DB
-[2023-12-29 14:55:29] Email sent successfully
-[2023-12-29 14:55:29] UserData inserted Into DB
-[2023-12-29 15:00:04] Email sent successfully
-[2023-12-29 15:00:04] UserData inserted Into DB
-[2023-12-29 16:04:54] Email sent successfully
-[2023-12-29 16:04:54] UserData inserted Into DB
-[2023-12-29 16:06:07] Email sent successfully
-[2023-12-29 16:06:07] UserData inserted Into DB
-[2023-12-29 16:07:04] Email sent successfully
-[2023-12-29 16:07:04] UserData inserted Into DB
-[2023-12-29 16:10:33] Email sent successfully
-[2023-12-29 16:10:33] UserData inserted Into DB
-[2023-12-29 17:02:40] Email sent successfully
-[2023-12-29 17:02:40] UserData inserted Into DB
-[2023-12-29 17:03:39] Email sent successfully
-[2023-12-29 17:03:39] UserData inserted Into DB
-[2023-12-29 17:04:58] Email sent successfully
-[2023-12-29 17:04:58] UserData inserted Into DB
-[2023-12-29 17:09:12] Email sent successfully
-[2023-12-29 17:10:03] Error in : insertUserDetails : Duplicate entry '849948242' for key 'phone_number'
-[2023-12-29 17:10:03] Error inserting UserData Into DB
-[2023-12-29 17:11:17] Email sent successfully
-[2023-12-29 17:11:23] Error in : insertUserDetails : Duplicate entry '849941111' for key 'phone_number'
-[2023-12-29 17:11:23] Error inserting UserData Into DB
-[2023-12-29 17:13:09] Email sent successfully
-[2023-12-29 17:14:26] Email sent successfully
-[2023-12-29 17:17:02] Email sent successfully
-[2023-12-29 17:18:49] Email sent successfully
-[2023-12-29 17:19:37] Email sent successfully
-[2023-12-29 17:21:04] Email sent successfully
-[2023-12-29 17:22:00] Email sent successfully
-[2023-12-29 17:22:44] Email sent successfully
-[2023-12-29 17:22:44] UserData inserted Into DB
-[2023-12-29 17:25:38] Email sent successfully
-[2023-12-29 17:25:38] UserData inserted Into DB
-[2023-12-29 17:29:50] Email sent successfully
-[2023-12-29 17:29:50] UserData inserted Into DB
-[2023-12-29 17:30:57] Email sent successfully
-[2023-12-29 17:30:57] UserData inserted Into DB
-[2023-12-29 17:32:14] Email sent successfully
-[2023-12-29 17:32:14] UserData inserted Into DB
-[2023-12-29 17:59:56] Email sent successfully
-[2023-12-29 17:59:56] UserData inserted Into DB
-[2023-12-29 18:00:46] Email sent successfully
-[2023-12-29 18:00:46] UserData inserted Into DB
-[2023-12-29 18:02:19] Email sent successfully
-[2023-12-29 18:02:19] UserData inserted Into DB
-[2023-12-29 18:10:47] Email sent successfully
-[2023-12-29 18:10:47] UserData inserted Into DB
-[2023-12-29 18:13:40] Email sent successfully
-[2023-12-29 18:13:40] UserData inserted Into DB
-[2023-12-29 18:19:56] Email sent successfully
-[2023-12-29 18:19:56] UserData inserted Into DB
-[2023-12-29 18:23:53] Email sent successfully
-[2023-12-29 18:23:53] UserData inserted Into DB
-[2024-01-02 11:14:44] Email sending failed with an exception: Message body empty
-[2024-01-02 11:14:44] Email not sent
-[2024-01-02 11:14:44] UserData inserted Into DB
-[2024-01-02 11:21:00] Email sent successfully
-[2024-01-02 11:21:00] UserData inserted Into DB
-[2024-01-02 11:29:07] Email sent successfully
-[2024-01-02 11:29:07] UserData inserted Into DB
-[2024-01-02 11:31:01] Email sent successfully
-[2024-01-02 11:31:01] UserData inserted Into DB
-[2024-01-02 11:32:52] Email sending failed with an exception: SMTP Error: Could not authenticate.
-[2024-01-02 11:32:52] Email not sent
-[2024-01-02 11:32:52] UserData inserted Into DB
-[2024-01-02 11:37:52] Error : Invalid login credential.
-[2024-01-02 11:38:45] Error : Invalid login credential.
-[2024-01-02 11:38:46] Error : Invalid login credential.
-[2024-01-02 11:38:47] Error : Invalid login credential.
-[2024-01-02 11:38:47] Error : Invalid login credential.
-[2024-01-02 11:38:47] Error : Invalid login credential.
-[2024-01-02 11:38:47] Error : Invalid login credential.
-[2024-01-02 11:38:47] Error : Invalid login credential.
-[2024-01-02 11:38:48] Error : Invalid login credential.
-[2024-01-02 11:38:48] Error : Invalid login credential.
-[2024-01-02 11:38:48] Error : Invalid login credential.
-[2024-01-02 11:38:49] Error : Invalid login credential.
-[2024-01-02 11:38:49] Error : Invalid login credential.
-[2024-01-02 11:38:49] Error : Invalid login credential.
-[2024-01-02 11:38:49] Error : Invalid login credential.
-[2024-01-02 11:38:50] Error : Invalid login credential.
-[2024-01-02 11:38:50] Error : Invalid login credential.
-[2024-01-02 11:39:21] Error : Invalid login credential.
-[2024-01-02 11:39:22] Error : Invalid login credential.
-[2024-01-02 11:39:22] Error : Invalid login credential.
-[2024-01-02 11:39:23] Error : Invalid login credential.
-[2024-01-02 11:39:23] Error : Invalid login credential.
-[2024-01-02 11:39:23] Error : Invalid login credential.
-[2024-01-02 11:39:23] Error : Invalid login credential.
-[2024-01-02 11:39:24] Error : Invalid login credential.
-[2024-01-02 11:39:24] Error : Invalid login credential.
-[2024-01-02 11:39:24] Error : Invalid login credential.
-[2024-01-02 11:39:24] Error : Invalid login credential.
-[2024-01-02 11:39:25] Error : Invalid login credential.
-[2024-01-02 11:39:25] Error : Invalid login credential.
-[2024-01-02 11:39:25] Error : Invalid login credential.
-[2024-01-02 11:39:26] Error : Invalid login credential.
-[2024-01-02 11:39:26] Error : Invalid login credential.
-[2024-01-02 11:41:43] Error : Invalid login credential.
-[2024-01-02 11:42:27] Error : Invalid login credential.
-[2024-01-02 11:42:35] Error : Invalid login credential.
-[2024-01-02 11:45:27] Error : Invalid login credential.
-[2024-01-02 11:47:31] Error : Invalid login credential.
-[2024-01-02 11:47:33] Error : Invalid login credential.
-[2024-01-02 11:47:33] Error : Invalid login credential.
-[2024-01-02 11:47:33] Error : Invalid login credential.
-[2024-01-02 11:47:34] Error : Invalid login credential.
-[2024-01-02 11:47:34] Error : Invalid login credential.
-[2024-01-02 11:48:07] Error : Invalid login credential.
-[2024-01-02 11:48:08] Error : Invalid login credential.
-[2024-01-02 11:48:09] Error : Invalid login credential.
-[2024-01-02 11:48:09] Error : Invalid login credential.
-[2024-01-02 11:48:09] Error : Invalid login credential.
-[2024-01-02 11:48:10] Error : Invalid login credential.
-[2024-01-02 11:48:10] Error : Invalid login credential.
-[2024-01-02 11:48:10] Error : Invalid login credential.
-[2024-01-02 11:48:10] Error : Invalid login credential.
-[2024-01-02 11:48:10] Error : Invalid login credential.
-[2024-01-02 11:48:11] Error : Invalid login credential.
-[2024-01-02 11:48:11] Error : Invalid login credential.
-[2024-01-02 11:48:11] Error : Invalid login credential.
-[2024-01-02 11:48:21] Error : Invalid login credential.
-[2024-01-02 11:48:29] Error : Invalid login credential.
-[2024-01-02 11:48:29] Error : Invalid login credential.
-[2024-01-02 11:48:29] Error : Invalid login credential.
-[2024-01-02 11:48:30] Error : Invalid login credential.
-[2024-01-02 11:48:30] Error : Invalid login credential.
-[2024-01-02 11:49:42] User logged in successful.
-[2024-01-02 16:55:51] Email sent successfully
-[2024-01-02 16:55:51] UserData inserted Into DB
-[2024-01-03 10:17:44] Email sent successfully
-[2024-01-03 10:17:44] UserData inserted Into DB
-[2024-01-03 15:52:06] Email sending failed with an exception: Call to a member function addAttachment() on null
-[2024-01-03 15:52:06] Email not sent
-[2024-01-03 15:52:06] UserData inserted Into DB
-[2024-01-03 15:54:31] Email sent successfully
-[2024-01-03 15:54:31] UserData inserted Into DB
-[2024-01-03 17:59:34] User logged in successful.
-[2024-01-03 18:04:40] User logged in successful.
-[2024-01-03 18:26:17] Invalid Request method : OPTIONS
-[2024-01-03 18:26:45] Invalid Request method : OPTIONS
-[2024-01-03 18:27:43] User logged in successful.
-[2024-01-03 18:27:57] Error : Invalid login credential.
-[2024-01-03 18:28:56] Error : Invalid login credential.
-[2024-01-03 18:29:42] Error : Invalid login credential.
-[2024-01-03 18:29:55] Error : Invalid login credential.
-[2024-01-03 18:30:41] Error : Invalid login credential.
-[2024-01-03 18:31:00] Error : Invalid login credential.
-[2024-01-03 18:35:03] Error : Invalid login credential.
-[2024-01-03 18:35:38] Error : Invalid login credential.
-[2024-01-03 18:39:48] Error : Invalid login credential.
-[2024-01-03 18:40:24] Error : Invalid login credential.
-[2024-01-03 18:40:49] Error : Invalid login credential.
-[2024-01-03 18:40:51] Error : Invalid login credential.
-[2024-01-03 18:41:23] Error : Invalid login credential.
-[2024-01-03 18:41:23] Error : Invalid login credential.
-[2024-01-03 18:41:36] Error : Invalid login credential.
-[2024-01-03 18:43:43] Error : Invalid login credential.
-[2024-01-03 18:45:50] User logged in successful.
-[2024-01-03 18:50:06] Email sent successfully
-[2024-01-03 18:50:06] UserData inserted Into DB
-[2024-01-04 10:46:18] Invalid Request method : OPTIONS
-[2024-01-04 10:48:03] Invalid Request method : OPTIONS
-[2024-01-04 10:51:46] Invalid Request method : OPTIONS
-[2024-01-04 10:53:29] Invalid Request method : OPTIONS
-[2024-01-04 10:53:52] Invalid Request method : OPTIONS
-[2024-01-04 10:54:04] Invalid Request method : OPTIONS
-[2024-01-04 10:54:56] Invalid Request method : OPTIONS
-[2024-01-04 10:55:33] Invalid Request method : OPTIONS
-[2024-01-04 10:59:03] Invalid Request method : OPTIONS
-[2024-01-04 10:59:25] Invalid Request method : OPTIONS
-[2024-01-04 11:25:48] User logged in successful.
-[2024-01-04 11:54:29] Success Response in getting booking details
-[2024-01-04 12:07:33] Success response in : getAllUserDetails
-[2024-01-04 12:14:23] Success Response in getting booking details
-[2024-01-04 12:14:23] Success Response in getting booking details
-[2024-01-04 12:18:15] Success Response in getting booking details
-[2024-01-04 12:18:15] Success Response in getting booking details
-[2024-01-04 12:19:46] Error in getting booking data
-[2024-01-04 12:19:46] Error in getting booking data
-[2024-01-04 12:19:47] Error in getting booking data
-[2024-01-04 12:19:47] Error in getting booking data
-[2024-01-04 12:19:58] Error in getting booking data
-[2024-01-04 12:19:58] Error in getting booking data
-[2024-01-04 12:20:05] Error in getting booking data
-[2024-01-04 12:20:05] Error in getting booking data
-[2024-01-04 12:21:45] Error in getting booking data
-[2024-01-04 12:21:45] Error in getting booking data
-[2024-01-04 12:25:32] Success Response in getting booking details
-[2024-01-04 12:25:32] Success Response in getting booking details
-[2024-01-04 12:27:17] Success Response in getting booking details
-[2024-01-04 12:27:17] Success Response in getting booking details
-[2024-01-04 12:27:17] Success Response in getting booking details
-[2024-01-04 12:27:17] Success Response in getting booking details
-[2024-01-04 12:27:18] Success Response in getting booking details
-[2024-01-04 12:27:18] Success Response in getting booking details
-[2024-01-04 12:27:18] Success Response in getting booking details
-[2024-01-04 12:27:18] Success Response in getting booking details
-[2024-01-04 12:27:18] Success Response in getting booking details
-[2024-01-04 12:27:18] Success Response in getting booking details
-[2024-01-04 12:27:19] Success Response in getting booking details
-[2024-01-04 12:27:19] Success Response in getting booking details
-[2024-01-04 12:27:19] Success Response in getting booking details
-[2024-01-04 12:27:19] Success Response in getting booking details
-[2024-01-04 12:29:46] Success Response in getting booking details
-[2024-01-04 12:29:46] Success Response in getting booking details
-[2024-01-04 12:48:21] User logged in successful.
+[2024-01-31 18:19:23] No such file or directory
+[2024-01-31 18:19:23] Error in : getAllUserDetails : Call to a member function query() on null
+[2024-01-31 18:19:23] No Data Available in : getAllUserDetails
+[2024-01-31 18:19:36] No such file or directory
+[2024-01-31 18:19:36] Error in : getAllUserDetails : Call to a member function query() on null
+[2024-01-31 18:19:36] No Data Available in : getAllUserDetails
+[2024-01-31 18:19:46] No such file or directory
+[2024-01-31 18:19:46] Error in : getAllUserDetails : Call to a member function query() on null
+[2024-01-31 18:19:46] No Data Available in : getAllUserDetails
+[2024-01-31 18:19:55] No such file or directory
+[2024-01-31 18:19:55] Error in : getAllUserDetails : Call to a member function query() on null
+[2024-01-31 18:19:55] No Data Available in : getAllUserDetails
+[2024-01-31 18:19:56] No such file or directory
+[2024-01-31 18:19:56] Error in : getAllUserDetails : Call to a member function query() on null
+[2024-01-31 18:19:56] No Data Available in : getAllUserDetails
+[2024-01-31 18:20:55] No such file or directory
+[2024-01-31 18:20:55] Error in : getAllUserDetails : Call to a member function query() on null
+[2024-01-31 18:20:55] No Data Available in : getAllUserDetails
+[2024-01-31 18:21:04] Error in : getAllUserDetails : Call to a member function query() on null
+[2024-01-31 18:21:04] No Data Available in : getAllUserDetails
+[2024-01-31 18:23:21] No such file or directory
+[2024-01-31 18:23:21] Error in : getAllUserDetails : Call to a member function query() on null
+[2024-01-31 18:23:21] No Data Available in : getAllUserDetails
+[2024-01-31 18:24:48] Success response in : getAllUserDetails
+[2024-01-31 18:25:03] No such file or directory
+[2024-01-31 18:25:03] Error in : getAllUserDetails : Call to a member function query() on null
+[2024-01-31 18:25:03] No Data Available in : getAllUserDetails
+[2024-01-31 18:36:39] No such file or directory
+[2024-01-31 18:36:39] Error in : getAllUserDetails : Call to a member function query() on null
+[2024-01-31 18:36:39] No Data Available in : getAllUserDetails
+[2024-02-01 15:17:22] Success Response in getting booking details
+[2024-02-01 15:17:22] Success Response in getting booking details
+[2024-02-01 15:17:23] Success Response in getting booking details
+[2024-02-01 15:17:23] Success Response in getting booking details
+[2024-02-01 15:17:24] Success Response in getting booking details
+[2024-02-01 15:17:24] Success Response in getting booking details
+[2024-02-01 15:17:24] Success Response in getting booking details
+[2024-02-01 15:17:24] Success Response in getting booking details
+[2024-02-01 15:17:24] Success Response in getting booking details
+[2024-02-01 15:17:24] Success Response in getting booking details
+[2024-02-01 15:17:24] Success Response in getting booking details
+[2024-02-01 15:17:24] Success Response in getting booking details
+[2024-02-01 15:17:25] Success Response in getting booking details
+[2024-02-01 15:17:25] Success Response in getting booking details
+[2024-02-01 15:17:26] Success Response in getting booking details
+[2024-02-01 15:17:26] Success Response in getting booking details
+[2024-02-01 15:17:28] Success Response in getting booking details
+[2024-02-01 15:17:28] Success Response in getting booking details
+[2024-02-01 15:17:29] Success Response in getting booking details
+[2024-02-01 15:17:29] Success Response in getting booking details
+[2024-02-01 15:17:30] Success Response in getting booking details
+[2024-02-01 15:17:30] Success Response in getting booking details
+[2024-02-01 15:17:30] Success Response in getting booking details
+[2024-02-01 15:17:30] Success Response in getting booking details
+[2024-02-01 15:17:31] Success Response in getting booking details
+[2024-02-01 15:17:31] Success Response in getting booking details
+[2024-02-01 15:17:31] Success Response in getting booking details
+[2024-02-01 15:17:31] Success Response in getting booking details
+[2024-02-01 15:17:31] Success Response in getting booking details
+[2024-02-01 15:17:31] Success Response in getting booking details
+[2024-02-01 15:17:31] Success Response in getting booking details
+[2024-02-01 15:17:31] Success Response in getting booking details
+[2024-02-01 15:17:31] Success Response in getting booking details
+[2024-02-01 15:17:31] Success Response in getting booking details
+[2024-02-01 15:17:32] Success Response in getting booking details
+[2024-02-01 15:17:32] Success Response in getting booking details
+[2024-02-01 15:17:33] Success Response in getting booking details
+[2024-02-01 15:17:33] Success Response in getting booking details
+[2024-02-01 15:17:34] Success Response in getting booking details
+[2024-02-01 15:17:34] Success Response in getting booking details
+[2024-02-01 15:17:35] Success Response in getting booking details
+[2024-02-01 15:17:35] Success Response in getting booking details
+[2024-02-01 15:17:49] Success Response in getting booking details
+[2024-02-01 15:17:49] Success Response in getting booking details
+[2024-02-01 15:17:51] Success Response in getting booking details
+[2024-02-01 15:17:51] Success Response in getting booking details
+[2024-02-01 15:17:52] Success Response in getting booking details
+[2024-02-01 15:17:52] Success Response in getting booking details
+[2024-02-01 15:17:54] Success Response in getting booking details
+[2024-02-01 15:17:54] Success Response in getting booking details
+[2024-02-01 15:17:55] Success Response in getting booking details
+[2024-02-01 15:17:55] Success Response in getting booking details
+[2024-02-01 15:17:56] Success Response in getting booking details
+[2024-02-01 15:17:56] Success Response in getting booking details
+[2024-02-01 15:17:56] Success Response in getting booking details
+[2024-02-01 15:17:56] Success Response in getting booking details
+[2024-02-01 15:17:56] Success Response in getting booking details
+[2024-02-01 15:17:56] Success Response in getting booking details
+[2024-02-01 15:17:56] Success Response in getting booking details
+[2024-02-01 15:17:56] Success Response in getting booking details
+[2024-02-01 15:17:57] Success Response in getting booking details
+[2024-02-01 15:17:57] Success Response in getting booking details
+[2024-02-01 15:17:59] Success Response in getting booking details
+[2024-02-01 15:17:59] Success Response in getting booking details
+[2024-02-01 15:17:59] Success Response in getting booking details
+[2024-02-01 15:17:59] Success Response in getting booking details
+[2024-02-01 15:18:01] Success Response in getting booking details
+[2024-02-01 15:18:01] Success Response in getting booking details
+[2024-02-01 15:18:02] Success Response in getting booking details
+[2024-02-01 15:18:02] Success Response in getting booking details
+[2024-02-01 15:18:03] Success Response in getting booking details
+[2024-02-01 15:18:03] Success Response in getting booking details
+[2024-02-01 15:19:49] Success Response in getting booking details
+[2024-02-01 15:19:49] Success Response in getting booking details
+[2024-02-05 13:41:07] User logged in successful.
+[2024-02-05 13:41:26] Success Response in getting booking details
+[2024-02-05 13:41:26] Success Response in getting booking details
+[2024-02-05 13:43:05] Success Response in getting booking details
+[2024-02-05 13:43:05] Success Response in getting booking details
+[2024-02-05 13:51:14] Success Response in getting booking details
+[2024-02-05 13:51:14] Success Response in getting booking details
+[2024-02-05 13:51:16] Success Response in getting booking details
+[2024-02-05 13:51:16] Success Response in getting booking details
+[2024-02-05 13:51:16] Success Response in getting booking details
+[2024-02-05 13:51:16] Success Response in getting booking details
+[2024-02-05 13:51:17] Success Response in getting booking details
+[2024-02-05 13:51:17] Success Response in getting booking details
+[2024-02-05 13:51:17] Success Response in getting booking details
+[2024-02-05 13:51:17] Success Response in getting booking details
+[2024-02-05 13:51:18] Success Response in getting booking details
+[2024-02-05 13:51:18] Success Response in getting booking details
+[2024-02-05 13:51:18] Success Response in getting booking details
+[2024-02-05 13:51:18] Success Response in getting booking details
+[2024-02-05 13:51:19] Success Response in getting booking details
+[2024-02-05 13:51:19] Success Response in getting booking details
+[2024-02-05 13:51:19] Success Response in getting booking details
+[2024-02-05 13:51:19] Success Response in getting booking details
+[2024-02-05 14:12:48] User logged in successful.
+[2024-02-05 14:12:55] Success Response in getting booking details
+[2024-02-05 14:12:55] Success Response in getting booking details
+[2024-02-05 14:14:25] Logout successful.
+[2024-02-05 14:14:40] User logged in successful.
+[2024-02-05 14:14:45] Success Response in getting booking details
+[2024-02-05 14:14:45] Success Response in getting booking details
+[2024-02-05 14:15:13] Success Response in getting booking details
+[2024-02-05 14:15:13] Success Response in getting booking details
+[2024-02-05 14:15:52] Logout successful.
+[2024-02-05 14:16:00] User logged in successful.
+[2024-02-06 12:19:17] User logged in successful.
+[2024-02-06 12:19:23] Success Response in getting booking details
+[2024-02-06 12:19:23] Success Response in getting booking details
+[2024-02-06 15:11:55] Success Response in getting booking details
+[2024-02-06 15:11:55] Success Response in getting booking details
+[2024-02-07 19:03:28] No Data found for Jagan
+[2024-02-07 19:03:28] Success response in : getUserByName
+[2024-02-07 19:03:35] No Data found for Jagan
+[2024-02-07 19:03:35] Success response in : getUserByName
+[2024-02-12 11:10:01] User logged in successful.
+[2024-02-12 11:10:07] Success Response in getting booking details
+[2024-02-12 11:10:07] Success Response in getting booking details
+[2024-02-12 11:10:10] Logout successful.
+[2024-02-12 11:20:06] User logged in successful.
+[2024-02-12 11:24:08] Error executing "SendMessage" on "https://sqs.us-east-1.amazonaws.com/your-sqs-queue-url"; AWS HTTP error: Client error: `POST https://sqs.us-east-1.amazonaws.com/your-sqs-queue-url` resulted in a `403 Forbidden` response:
+<?xml version="1.0"?><ErrorResponse xmlns="http://queue.amazonaws.com/doc/2012-11-05/"><Error><Type>Sender</Type><Code>I (truncated...)
+ InvalidClientTokenId (client): The security token included in the request is invalid. - <?xml version="1.0"?><ErrorResponse xmlns="http://queue.amazonaws.com/doc/2012-11-05/"><Error><Type>Sender</Type><Code>InvalidClientTokenId</Code><Message>The security token included in the request is invalid.</Message><Detail/></Error><RequestId>d1ba4686-7ade-5817-952c-18c5ce1ed4eb</RequestId></ErrorResponse>
+[2024-02-12 11:24:08] User data deleted for UserName : farid2 in deleteCustomerByName
+[2024-02-12 11:29:50] User data not found in : deleteCustomerByName
+[2024-02-12 12:14:30] User logged in successful.
+[2024-02-12 12:14:36] Success Response in getting booking details
+[2024-02-12 12:14:36] Success Response in getting booking details
+[2024-02-12 13:00:07] User logged in successful.
+[2024-02-12 13:00:18] User logged in successful.
+[2024-02-12 14:23:48] User logged in successful.
+[2024-02-12 14:25:43] User logged in successful.
+[2024-02-13 18:37:35] User logged in successful.
+[2024-02-13 18:37:47] User logged in successful.
+[2024-02-14 11:05:30] No Data found for Fari
+[2024-02-14 11:05:30] Success response in : getUserByName
+[2024-02-14 11:05:42] Success response in : getAllUserDetails
+[2024-02-14 11:08:11] User logged in successful.
+[2024-02-14 11:08:17] Success response in : getAllUserDetails
+[2024-02-14 11:08:36] Success Response in getting booking details
+[2024-02-14 11:08:46] Logout successful.
+[2024-02-14 11:14:25] User logged in successful.
+[2024-02-14 11:14:29] User logged in successful.
+[2024-02-14 11:14:40] Logout successful.
+[2024-02-14 19:07:10] No Data found for kugfx
+[2024-02-14 19:07:10] Success response in : getUserByName
+[2024-02-14 19:07:24] Email sent successfully
+[2024-02-14 19:07:24] UserData inserted Into DB
+[2024-02-14 19:20:17] No Data found for mnbvcx
+[2024-02-14 19:20:17] Success response in : getUserByName
+[2024-02-14 19:20:29] Error in : insertUserDetails : Duplicate entry '987654345' for key 'phone_number'
+[2024-02-14 19:21:42] Error in : insertUserDetails : Duplicate entry 'sathishenfield1996@gmail.com' for key 'email'
+[2024-02-14 19:22:07] Email sent successfully
+[2024-02-14 19:22:07] UserData inserted Into DB
+[2024-02-15 15:30:55] No Data found for lkjh
+[2024-02-15 15:30:55] Success response in : getUserByName
+[2024-02-15 15:31:16] Email sent successfully
+[2024-02-15 15:31:16] UserData inserted Into DB
+[2024-02-15 16:06:51] User logged in successful.
+[2024-02-15 16:06:56] User data not found in : deleteCustomerByName
+[2024-02-15 16:07:39] Error executing "SendMessage" on "https://sqs.us-east-1.amazonaws.com/your-sqs-queue-url"; AWS HTTP error: Client error: `POST https://sqs.us-east-1.amazonaws.com/your-sqs-queue-url` resulted in a `403 Forbidden` response:
+<?xml version="1.0"?><ErrorResponse xmlns="http://queue.amazonaws.com/doc/2012-11-05/"><Error><Type>Sender</Type><Code>I (truncated...)
+ InvalidClientTokenId (client): The security token included in the request is invalid. - <?xml version="1.0"?><ErrorResponse xmlns="http://queue.amazonaws.com/doc/2012-11-05/"><Error><Type>Sender</Type><Code>InvalidClientTokenId</Code><Message>The security token included in the request is invalid.</Message><Detail/></Error><RequestId>f7c7f5cb-5174-5b57-8e0e-ab8cbac7f752</RequestId></ErrorResponse>
+[2024-02-15 16:07:39] User data deleted for UserName : mnbvcx in deleteCustomerByName
+[2024-02-15 16:11:49] User data not found in : deleteCustomerByName
+[2024-02-15 16:12:07] Error executing "SendMessage" on "https://sqs.us-east-1.amazonaws.com/your-sqs-queue-url"; AWS HTTP error: Client error: `POST https://sqs.us-east-1.amazonaws.com/your-sqs-queue-url` resulted in a `403 Forbidden` response:
+<?xml version="1.0"?><ErrorResponse xmlns="http://queue.amazonaws.com/doc/2012-11-05/"><Error><Type>Sender</Type><Code>I (truncated...)
+ InvalidClientTokenId (client): The security token included in the request is invalid. - <?xml version="1.0"?><ErrorResponse xmlns="http://queue.amazonaws.com/doc/2012-11-05/"><Error><Type>Sender</Type><Code>InvalidClientTokenId</Code><Message>The security token included in the request is invalid.</Message><Detail/></Error><RequestId>65fa163f-09aa-56ec-b6da-4878e515a7cc</RequestId></ErrorResponse>
+[2024-02-15 16:12:07] User data deleted for UserName : ds in deleteCustomerByName
+[2024-02-15 16:54:28] User logged in successful.
+[2024-02-15 17:09:24] User logged in successful.
+[2024-02-15 17:10:40] User logged in successful.
+[2024-02-15 17:10:45] Logout successful.
+[2024-02-15 17:52:14] No Data found for Rev
+[2024-02-15 17:52:14] Success response in : getUserByName
+[2024-02-15 17:52:27] No Data found for Revanth
+[2024-02-15 17:52:27] Success response in : getUserByName
+[2024-02-15 17:53:44] Email sent successfully
+[2024-02-15 17:53:44] UserData inserted Into DB
+[2024-02-15 18:09:52] Logout successful.
+[2024-02-15 18:10:37] Error in : insertUserDetails : Duplicate entry '8394213422' for key 'phone_number'
+[2024-02-15 18:11:24] Error in : insertUserDetails : Duplicate entry '8394213422' for key 'phone_number'
+[2024-02-15 18:11:43] Error in : insertUserDetails : Duplicate entry '8394213422' for key 'phone_number'
+[2024-02-15 18:12:05] Error in : insertUserDetails : Duplicate entry '8394213422' for key 'phone_number'
+[2024-02-15 18:12:22] Email sent successfully
+[2024-02-15 18:12:22] UserData inserted Into DB
+[2024-02-15 18:17:35] Invalid input in url /Mystudio_webapp/angular/API/Controller/controller.php
+[2024-02-15 18:20:19] Invalid input in url /Mystudio_webapp/angular/API/Controller/controller.php?userName=VinothKumar
+[2024-02-15 18:20:45] Invalid input in url /Mystudio_webapp/angular/API/Controller/controller.php?name=VinothKumar
+[2024-02-15 18:21:48] User logged in successful.
+[2024-02-15 18:22:26] Error in : updateCustomerDetails : Call to undefined method UserModel::getCustomerByName()
+[2024-02-15 18:22:26] Error in updating customer data
+[2024-02-15 18:31:38] Error in : updateCustomerDetails : Call to undefined method UserModel::getCustomerByName()
+[2024-02-15 18:31:38] Error in updating customer data
+[2024-02-15 18:36:20] Success Response : Customer data updated
+[2024-02-15 18:58:21] Email sent successfully
+[2024-02-15 18:58:21] UserData inserted Into DB
+[2024-02-15 18:58:36] No Data found for grfdas
+[2024-02-15 18:58:36] Success response in : getUserByName
+[2024-02-15 18:58:54] Email sent successfully
+[2024-02-15 18:58:54] UserData inserted Into DB
+[2024-02-15 18:59:39] No Data found for xcvbn
+[2024-02-15 18:59:39] Success response in : getUserByName
+[2024-02-15 18:59:58] Email sent successfully
+[2024-02-15 18:59:58] UserData inserted Into DB
+[2024-02-15 19:07:28] Invalid Request method : POST
+[2024-02-15 19:10:16] Unknown Endpoint for POST URL : /Mystudio_webapp/angular/API/Controller/controller.php
+[2024-02-15 19:15:31] Invalid input in url 
+[2024-02-15 19:16:11] Invalid input in url /Mystudio_webapp/angular/API/Controller/controller.php
+[2024-02-15 19:17:06] Error in : insertUserDetails : Duplicate entry '939421321' for key 'phone_number'
+[2024-02-15 19:17:06] Error in : insertUserDetails : Duplicate entry '939421321' for key 'phone_number'
+[2024-02-15 19:21:25] Success response in : getAllUserDetails
+[2024-02-15 19:21:36] Unknown Endpoint for GET URL : /Mystudio_webapp/angular/API/Controller/controller.php/getAllUse
+[2024-02-15 19:21:46] Unknown Endpoint for GET URL : /Mystudio_webapp/angular/API/Controller/controller.php
+[2024-02-15 19:22:48] Success response in : getAllUserDetails
+[2024-02-15 19:23:54] No Data found for Fari
+[2024-02-15 19:23:54] Success response in : getUserByName
+[2024-02-15 19:24:47] Invalid Parameter in /Mystudio_webapp/angular/API/Controller/controller.php/getCustomerByName?userName=Farid&role=
+[2024-02-15 19:24:55] No Data found for Farid
+[2024-02-15 19:24:55] Success response in : getUserByName
+[2024-02-15 19:25:08] Invalid Parameter in /Mystudio_webapp/angular/API/Controller/controller.php/getCustomerByName?userName=Farid
+[2024-02-15 19:25:19] Invalid Parameter in /Mystudio_webapp/angular/API/Controller/controller.php/getCustomerByName?
+[2024-02-15 19:25:24] Unknown Endpoint for GET URL : /Mystudio_webapp/angular/API/Controller/controller.php/getCustomerByNam
+[2024-02-15 19:28:48] Unknown Endpoint for GET URL : /Mystudio_webapp/angular/API/Controller/controller.php/getCustomerByNam
+[2024-02-15 19:28:49] Unknown Endpoint for GET URL : /Mystudio_webapp/angular/API/Controller/controller.php/getCustomerByNam
+[2024-02-15 19:28:57] Invalid Parameter in /Mystudio_webapp/angular/API/Controller/controller.php/getCustomerByName
+[2024-02-15 19:30:08] Invalid Parameter in /Mystudio_webapp/angular/API/Controller/controller.php/getCustomerByName
+[2024-02-15 19:31:05] Invalid Parameter in /Mystudio_webapp/angular/API/Controller/controller.php/getCustomerByName?userName&role
+[2024-02-15 19:31:13] Invalid Parameter in /Mystudio_webapp/angular/API/Controller/controller.php/getCustomerByName?userName=Farid&role
+[2024-02-15 19:31:35] No Data found for Farid
+[2024-02-15 19:31:35] Success response in : getUserByName
+[2024-02-15 19:32:02] No Data found for Farid
+[2024-02-15 19:32:02] Success response in : getUserByName
+[2024-02-15 19:34:29] No Data found for Farid
+[2024-02-15 19:34:29] Success response in : getUserByName
+[2024-02-15 19:34:45] Invalid parameter in /Mystudio_webapp/angular/API/Controller/controller.php/deleteCustomer
+[2024-02-15 19:34:51] Unknown Endpoint for DELETE URL : /Mystudio_webapp/angular/API/Controller/controller.php/deleteCustom
+[2024-02-15 19:35:03] User data not found in : deleteCustomerByName
+[2024-02-15 19:35:31] User data not found in : deleteCustomerByName
+[2024-02-15 19:36:19] User data not found in : deleteCustomerByName
+[2024-02-16 10:53:35] Email sending failed with an exception: SMTP Error: Could not authenticate.
+[2024-02-16 10:53:35] Email not sent
+[2024-02-16 10:53:35] UserData inserted Into DB
+[2024-02-16 10:55:05] Error in : insertUserDetails : SMTP Error: Could not authenticate.
+[2024-02-16 10:58:42] Email sending failed with an exception: Message body empty
+[2024-02-16 10:58:42] Email not sent
+[2024-02-16 10:58:42] UserData inserted Into DB
+[2024-02-16 11:05:27] User logged in successful.
+[2024-02-16 11:05:35] Success Response in getting booking details
+[2024-02-16 11:05:35] Success Response in getting booking details
+[2024-02-16 11:06:38] Success Response in updating booking details
+[2024-02-16 11:06:38] Success Response in getting booking details
+[2024-02-16 11:06:53] Success Response in updating booking details
+[2024-02-16 11:06:53] Success Response in getting booking details
+[2024-02-16 11:22:08] User logged in successful.
+[2024-02-16 11:22:21] Error in updating customer data
+[2024-02-16 11:24:09] Success Response : Customer data updated
+[2024-02-16 11:24:40] Success Response : Customer data updated
+[2024-02-16 11:25:42] Success Response : Customer data updated
+[2024-02-16 11:25:46] No updated values in : updateCustomerDetails
+[2024-02-16 11:25:46] Error in updating customer data
+[2024-02-16 11:27:13] No updated values in : updateCustomerDetails
+[2024-02-16 11:27:13] Success Response : Customer data updated
+[2024-02-16 11:27:15] No updated values in : updateCustomerDetails
+[2024-02-16 11:27:15] Success Response : Customer data updated
+[2024-02-16 11:28:53] No updated values in : updateUserDetails
+[2024-02-16 11:28:53] Success Response : Customer data updated
+[2024-02-16 11:28:59] Success Response : Customer data updated
+[2024-02-16 11:30:34] Invalid input in url /Mystudio_webapp/angular/API/Controller/controller.php
+[2024-02-16 11:31:14] Empty body in url /Mystudio_webapp/angular/API/Controller/controller.php
+[2024-02-16 11:32:06] Empty body in url /Mystudio_webapp/angular/API/Controller/controller.php
+[2024-02-16 11:32:22] Error : Invalid login credential.
+[2024-02-16 11:32:33] User logged in successful.
+[2024-02-16 11:32:49] Success Response : Customer data updated
+[2024-02-16 11:33:44] No updated values in : updateUserDetails
+[2024-02-16 11:33:44] Success Response : user data updated
+[2024-02-16 11:33:57] No updated values in : updateUserDetails
+[2024-02-16 11:33:57] Success Response : user data updated
+[2024-02-16 11:34:14] No updated values in : updateUserDetails
+[2024-02-16 11:34:14] Success Response : user data updated
+[2024-02-16 11:34:15] No updated values in : updateUserDetails
+[2024-02-16 11:34:15] Success Response : user data updated
+[2024-02-16 11:34:16] No updated values in : updateUserDetails
+[2024-02-16 11:34:16] Success Response : user data updated
+[2024-02-16 11:34:53] Success Response : user data updated
+[2024-02-16 11:35:08] No updated values in : updateUserDetails
+[2024-02-16 11:35:08] Success Response : user data updated
+[2024-02-16 11:36:04] User data not found in : deleteCustomerByName
+[2024-02-16 11:36:14] Invalid parameter in /Mystudio_webapp/angular/API/Controller/controller.php/deleteCustomer?
+[2024-02-16 11:37:02] Invalid parameter in /Mystudio_webapp/angular/API/Controller/controller.php/deleteCustomer?
+[2024-02-16 11:37:14] User data not found in : deleteCustomerByName
+[2024-02-16 11:39:00] Invalid input in url /Mystudio_webapp/angular/API/Controller/controller.php/deleteCustomer?name=Suresh
+[2024-02-16 11:40:00] Unknown Endpoint for POST URL : /Mystudio_webapp/angular/API/Controller/controller.php?action=login4
+[2024-02-16 11:40:24] Invalid input in url /Mystudio_webapp/angular/API/Controller/controller.php?action=login
+[2024-02-16 11:40:28] Invalid input in url /Mystudio_webapp/angular/API/Controller/controller.php?action=login
+[2024-02-16 11:40:45] Invalid input in url /Mystudio_webapp/angular/API/Controller/controller.php?action=insertUser
+[2024-02-16 11:40:46] Invalid input in url /Mystudio_webapp/angular/API/Controller/controller.php?action=insertUser
+[2024-02-16 11:41:42] Unknown Endpoint for DELETE URL : /Mystudio_webapp/angular/API/Controller/controller.php/deletustomer?name=Suresh
+[2024-02-16 11:42:30] Invalid parameter in /Mystudio_webapp/angular/API/Controller/controller.php/deleteCustomer?
+[2024-02-16 11:43:26] Unknown Endpoint for DELETE URL : /Mystudio_webapp/angular/API/Controller/controller.php/deleteCustome
+[2024-02-16 11:43:37] User data not found in : deleteCustomerByName
+[2024-02-16 11:43:53] Unknown Endpoint for GET URL : /Mystudio_webapp/angular/API/Controller/controller.php/deleteCustomer?name=Sure
+[2024-02-16 11:44:05] Invalid input in url /Mystudio_webapp/angular/API/Controller/controller.php/deleteCustomer?name=Sure
+[2024-02-16 11:44:06] Invalid input in url /Mystudio_webapp/angular/API/Controller/controller.php/deleteCustomer?name=Sure
+[2024-02-16 11:44:08] Invalid input in url /Mystudio_webapp/angular/API/Controller/controller.php/deleteCustomer?name=Sure
+[2024-02-16 11:44:13] Empty body in url /Mystudio_webapp/angular/API/Controller/controller.php/deleteCustomer?name=Sure
+[2024-02-16 11:51:24] Unknown Endpoint for PUT URL : /Mystudio_webapp/angular/API/Controller/controller.php/deleteCustomer?name=Sure
+[2024-02-16 11:51:26] Unknown Endpoint for PUT URL : /Mystudio_webapp/angular/API/Controller/controller.php/deleteCustomer?name=Sure
+[2024-02-16 11:51:35] Unknown Endpoint for PUT URL : /Mystudio_webapp/angular/API/Controller/controller.php
+[2024-02-16 11:51:44] No updated values in : updateUserDetails
+[2024-02-16 11:51:44] Success Response : user data updated
+[2024-02-16 11:51:49] Empty body in url /Mystudio_webapp/angular/API/Controller/controller.php/updateUser
+[2024-02-16 11:51:56] No updated values in : updateUserDetails
+[2024-02-16 11:51:56] Success Response : user data updated
+[2024-02-16 11:52:02] Unknown Endpoint for GET URL : /Mystudio_webapp/angular/API/Controller/controller.php/updateUser
+[2024-02-16 11:52:06] Invalid input in url /Mystudio_webapp/angular/API/Controller/controller.php/updateUser
+[2024-02-16 11:52:13] Unknown Endpoint for DELETE URL : /Mystudio_webapp/angular/API/Controller/controller.php/updateUser
+[2024-02-16 11:52:20] No updated values in : updateUserDetails
+[2024-02-16 11:52:20] Success Response : user data updated
+[2024-02-16 11:52:24] Invalid Request method : HEAD
+[2024-02-16 11:52:58] Invalid Request method : HEAD
+[2024-02-16 11:52:58] Invalid Request method : HEAD
+[2024-02-16 11:54:16] Invalid Request method : HEAD
+[2024-02-16 11:54:17] Invalid Request method : HEAD
+[2024-02-16 11:54:18] Invalid Request method : HEAD
+[2024-02-16 11:54:23] Invalid Request method : OPTIONS
+[2024-02-16 11:54:32] Invalid Request method : PATCH
+[2024-02-16 11:54:38] Invalid Request method : HEAD
+[2024-02-16 11:54:44] Invalid Request method : OPTIONS
+[2024-02-16 11:55:07] Invalid Request method : OPTIONS
+[2024-02-16 11:55:13] No updated values in : updateUserDetails
+[2024-02-16 11:55:13] Success Response : user data updated
+[2024-02-16 11:56:05] Unknown Endpoint for PUT URL : /Mystudio_webapp/angular/API/Controller/controller.php/deleteCustomer?name=Sure
+[2024-02-16 11:56:12] User data not found in : deleteCustomerByName
+[2024-02-16 11:56:31] Error executing "SendMessage" on "https://sqs.us-east-1.amazonaws.com/your-sqs-queue-url"; AWS HTTP error: Client error: `POST https://sqs.us-east-1.amazonaws.com/your-sqs-queue-url` resulted in a `403 Forbidden` response:
+<?xml version="1.0"?><ErrorResponse xmlns="http://queue.amazonaws.com/doc/2012-11-05/"><Error><Type>Sender</Type><Code>I (truncated...)
+ InvalidClientTokenId (client): The security token included in the request is invalid. - <?xml version="1.0"?><ErrorResponse xmlns="http://queue.amazonaws.com/doc/2012-11-05/"><Error><Type>Sender</Type><Code>InvalidClientTokenId</Code><Message>The security token included in the request is invalid.</Message><Detail/></Error><RequestId>2cb21e8a-2781-5703-b41d-40c325d68764</RequestId></ErrorResponse>
+[2024-02-16 11:56:31] User data deleted for UserName : erf in deleteCustomerByName
+[2024-02-16 11:56:35] User data not found in : deleteCustomerByName
+[2024-02-16 11:56:49] Invalid parameter in /Mystudio_webapp/angular/API/Controller/controller.php/deleteCustomer?
+[2024-02-16 11:56:54] Unknown Endpoint for DELETE URL : /Mystudio_webapp/angular/API/Controller/controller.php/deleteCustome
+[2024-02-16 11:57:46] User data not found in : deleteCustomerByName
+[2024-02-16 12:00:02] User logged in successful.
+[2024-02-16 12:03:44] Invalid input in url /Mystudio_webapp/angular/API/Controller/controller.php?action=login
+[2024-02-16 12:21:34] User logged in successful.
+[2024-02-16 12:21:39] Unknown Endpoint for POST URL : /Mystudio_webapp/angular/API/Controller/controller.php?action=log
+[2024-02-16 12:21:45] Invalid input in url /Mystudio_webapp/angular/API/Controller/controller.php?
+[2024-02-16 12:21:50] Invalid input in url /Mystudio_webapp/angular/API/Controller/controller.php?
+[2024-02-16 12:21:52] Invalid input in url /Mystudio_webapp/angular/API/Controller/controller.php?
+[2024-02-16 12:21:58] Unknown Endpoint for GET URL : /Mystudio_webapp/angular/API/Controller/controller.php?action=login
+[2024-02-16 12:22:03] Unknown Endpoint for PUT URL : /Mystudio_webapp/angular/API/Controller/controller.php?action=login
+[2024-02-16 12:22:11] Unknown Endpoint for DELETE URL : /Mystudio_webapp/angular/API/Controller/controller.php?action=login
+[2024-02-16 12:22:26] Error : Invalid login credential.
+[2024-02-16 12:23:00] Invalid input in url /Mystudio_webapp/angular/API/Controller/controller.php?action=login
+[2024-02-16 12:23:12] User logged in successful.
+[2024-02-16 12:23:21] Error : Invalid login credential.
+[2024-02-16 12:23:32] User logged in successful.
+[2024-02-16 12:24:04] Error in getting booking data
+[2024-02-16 12:24:06] Error in getting booking data
+[2024-02-16 12:24:46] User logged in successful.
+[2024-02-16 12:24:50] Success Response in getting booking details
+[2024-02-16 12:28:51] Success Response in getting booking details
+[2024-02-16 12:29:40] Success Response in getting booking details
+[2024-02-16 12:29:47] Unknown Endpoint for GET URL : /Mystudio_webapp/angular/API/Controller/controller.php/getCustomerBooki
+[2024-02-16 12:29:57] Invalid input in url /Mystudio_webapp/angular/API/Controller/controller.php/getCustomerBookings
+[2024-02-16 12:30:03] Unknown Endpoint for PUT URL : /Mystudio_webapp/angular/API/Controller/controller.php/getCustomerBookings
+[2024-02-16 12:30:08] Unknown Endpoint for DELETE URL : /Mystudio_webapp/angular/API/Controller/controller.php/getCustomerBookings
+[2024-02-16 12:30:12] Invalid Request method : PATCH
+[2024-02-16 12:30:17] Invalid Request method : OPTIONS
+[2024-02-16 12:30:22] Success Response in getting booking details
+[2024-02-16 12:32:54] User logged in successful.
+[2024-02-16 12:32:59] Error in getting booking data
+[2024-02-16 12:33:44] Success Response in getting booking details
+[2024-02-16 12:33:54] Error in getting booking data
+[2024-02-16 12:36:51] Logout successful.
+[2024-02-16 12:37:10] No Data found for Farid
+[2024-02-16 12:37:10] Success response in : getUserByName
+[2024-02-16 12:37:35] User logged in successful.
+[2024-02-16 12:37:38] Success Response in getting booking details
+[2024-02-16 12:39:07] Success Response in getting booking details
+[2024-02-16 12:39:07] Success Response in getting booking details
+[2024-02-16 12:40:26] Email sent successfully
+[2024-02-16 12:40:26] UserData inserted Into DB
+[2024-02-16 12:43:02] User logged in successful.
+[2024-02-16 12:43:06] Success response in : getAllUserDetails
+[2024-02-16 12:43:14] Unknown Endpoint for GET URL : /Mystudio_webapp/angular/API/Controller/controller.php/getAllU
+[2024-02-16 12:43:24] Invalid input in url /Mystudio_webapp/angular/API/Controller/controller.php/getAllUser
+[2024-02-16 12:43:29] Unknown Endpoint for PUT URL : /Mystudio_webapp/angular/API/Controller/controller.php/getAllUser
+[2024-02-16 12:43:34] Unknown Endpoint for DELETE URL : /Mystudio_webapp/angular/API/Controller/controller.php/getAllUser
+[2024-02-16 12:43:39] Invalid Request method : OPTIONS
+[2024-02-16 12:44:32] No Data found for Farid
+[2024-02-16 12:44:32] Success response in : getUserByName
+[2024-02-16 12:45:17] Error in : updateUserDetails : Duplicate entry '123456789' for key 'phone_number'
+[2024-02-16 12:45:17] Error in updating user data
+[2024-02-16 12:45:18] Error in : updateUserDetails : Duplicate entry '123456789' for key 'phone_number'
+[2024-02-16 12:45:18] Error in updating user data
+[2024-02-16 12:47:15] Success Response : user data updated
+[2024-02-16 12:47:39] Empty body in url /Mystudio_webapp/angular/API/Controller/controller.php/updateUser
+[2024-02-16 12:47:49] Unknown Endpoint for PUT URL : /Mystudio_webapp/angular/API/Controller/controller.php/updateU
+[2024-02-16 12:47:57] Unknown Endpoint for GET URL : /Mystudio_webapp/angular/API/Controller/controller.php/updateUser
+[2024-02-16 12:48:02] Invalid input in url /Mystudio_webapp/angular/API/Controller/controller.php/updateUser
+[2024-02-16 12:48:13] Unknown Endpoint for DELETE URL : /Mystudio_webapp/angular/API/Controller/controller.php/updateUser
+[2024-02-16 12:48:29] No updated values in : updateUserDetails
+[2024-02-16 12:48:29] Success Response : user data updated
+[2024-02-16 12:48:30] No updated values in : updateUserDetails
+[2024-02-16 12:48:30] Success Response : user data updated
+[2024-02-16 12:48:31] No updated values in : updateUserDetails
+[2024-02-16 12:48:31] Success Response : user data updated
+[2024-02-16 12:48:53] Error executing "SendMessage" on "https://sqs.us-east-1.amazonaws.com/your-sqs-queue-url"; AWS HTTP error: Client error: `POST https://sqs.us-east-1.amazonaws.com/your-sqs-queue-url` resulted in a `403 Forbidden` response:
+<?xml version="1.0"?><ErrorResponse xmlns="http://queue.amazonaws.com/doc/2012-11-05/"><Error><Type>Sender</Type><Code>I (truncated...)
+ InvalidClientTokenId (client): The security token included in the request is invalid. - <?xml version="1.0"?><ErrorResponse xmlns="http://queue.amazonaws.com/doc/2012-11-05/"><Error><Type>Sender</Type><Code>InvalidClientTokenId</Code><Message>The security token included in the request is invalid.</Message><Detail/></Error><RequestId>00dc22d2-80ee-57e7-b169-7c9b8e73eb55</RequestId></ErrorResponse>
+[2024-02-16 12:48:53] User data deleted for UserName : erf in deleteCustomerByName
+[2024-02-16 12:49:05] Invalid parameter in /Mystudio_webapp/angular/API/Controller/controller.php/deleteCustomer?name=
+[2024-02-16 12:49:10] Invalid parameter in /Mystudio_webapp/angular/API/Controller/controller.php/deleteCustomer?
+[2024-02-16 12:49:15] Unknown Endpoint for DELETE URL : /Mystudio_webapp/angular/API/Controller/controller.php/deleteCust
+[2024-02-16 12:49:23] Unknown Endpoint for GET URL : /Mystudio_webapp/angular/API/Controller/controller.php/deleteCustomer?name=erf
+[2024-02-16 12:49:29] Invalid input in url /Mystudio_webapp/angular/API/Controller/controller.php/deleteCustomer?name=erf
+[2024-02-16 12:49:33] Unknown Endpoint for PUT URL : /Mystudio_webapp/angular/API/Controller/controller.php/deleteCustomer?name=erf
+[2024-02-16 12:49:38] Invalid Request method : PATCH
+[2024-02-16 12:49:50] Success Response in getting booking details
+[2024-02-16 12:49:56] Unknown Endpoint for GET URL : /Mystudio_webapp/angular/API/Controller/controller.php/getCustomerBo
+[2024-02-16 12:50:14] Unknown Endpoint for GET URL : /Mystudio_webapp/angular/API/Controller/controller.php/getOwnerB
+[2024-02-16 12:50:24] Logout successful.
+[2024-02-16 12:50:58] User logged in successful.
+[2024-02-16 12:51:03] Success Response in getting booking details
+[2024-02-16 12:51:03] Success Response in getting booking details
+[2024-02-16 12:51:28] Success Response in updating booking details
+[2024-02-16 12:51:28] Success Response in getting booking details
+[2024-02-16 12:51:42] Success Response in updating booking details
+[2024-02-16 12:51:42] Success Response in getting booking details
+[2024-02-16 12:52:09] Success Response in getting booking details
+[2024-02-16 12:52:09] Success Response in getting booking details
+[2024-02-16 12:53:31] No Data found for Vasanth
+[2024-02-16 12:53:31] Success response in : getUserByName
+[2024-02-16 12:53:38] No Data found for Vasanthd
+[2024-02-16 12:53:38] Success response in : getUserByName
+[2024-02-16 12:53:41] No Data found for Vasanth
+[2024-02-16 12:53:41] Success response in : getUserByName
+[2024-02-16 12:54:10] Email sent successfully
+[2024-02-16 12:54:10] UserData inserted Into DB
+[2024-02-16 12:56:27] Error : Invalid login credential.
+[2024-02-16 12:57:37] Error : Invalid login credential.
+[2024-02-16 12:57:38] Error : Invalid login credential.
+[2024-02-16 12:59:20] User logged in successful.
+[2024-02-16 13:00:22] User logged in successful.
+[2024-02-16 13:01:38] User logged in successful.
+[2024-02-16 13:01:44] Success Response in getting booking details
+[2024-02-16 13:01:44] Success Response in getting booking details
+[2024-02-16 13:01:56] Success Response in getting booking details
+[2024-02-16 13:01:56] Success Response in getting booking details
+[2024-02-16 13:03:16] Success Response in getting booking details
+[2024-02-16 13:03:16] Success Response in getting booking details
+[2024-02-16 13:03:33] Success Response in getting booking details
+[2024-02-16 13:03:33] Success Response in getting booking details
+[2024-02-16 13:04:07] Error : Invalid login credential.
+[2024-02-16 13:04:24] User logged in successful.
+[2024-02-16 13:04:29] Success Response in getting booking details
+[2024-02-16 13:04:29] Success Response in getting booking details
+[2024-02-16 13:05:36] Error in : updateUserDetails : Duplicate entry '1233456789' for key 'phone_number'
+[2024-02-16 13:05:36] Error in updating user data
+[2024-02-16 13:06:32] No updated values in : updateUserDetails
+[2024-02-16 13:06:32] Success Response : user data updated
+[2024-02-16 13:24:37] Email sent successfully
+[2024-02-16 13:24:37] UserData inserted Into DB
+[2024-02-16 13:25:48] Email sent successfully
+[2024-02-16 13:25:48] UserData inserted Into DB
+[2024-02-16 13:26:24] Email sent successfully
+[2024-02-16 13:26:24] UserData inserted Into DB
+[2024-02-16 13:27:29] Email sent successfully
+[2024-02-16 13:27:29] UserData inserted Into DB
+[2024-02-16 13:28:30] Email sent successfully
+[2024-02-16 13:28:30] UserData inserted Into DB
+[2024-02-16 13:29:13] UserData inserted Into DB
+[2024-02-16 13:29:49] UserData inserted Into DB
+[2024-02-16 13:30:19] Email sent successfully
+[2024-02-16 13:30:19] UserData inserted Into DB
+[2024-02-16 13:32:47] Email sent successfully
+[2024-02-16 13:32:47] UserData inserted Into DB
+[2024-02-16 13:33:24] Email sent successfully
+[2024-02-16 13:33:24] UserData inserted Into DB
+[2024-02-16 13:35:11] Email sent successfully
+[2024-02-16 13:35:11] UserData inserted Into DB
+[2024-02-16 13:36:07] UserData inserted Into DB
+[2024-02-16 13:39:43] Email sent successfully
+[2024-02-16 13:39:43] UserData inserted Into DB

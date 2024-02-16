@@ -1,28 +1,29 @@
 
-myApp.controller('dt2Ctrl', ['$scope', '$timeout', '$location', '$http', function ($scope, $timeout, $location, $http) {
-  var userName = localStorage.storedUserName;
-  $scope.userName = userName;
+myApp.controller('dt2Ctrl', ['$scope', '$location', '$http', '$timeout', function ($scope, $location, $http, $timeout) {
 
   $scope.initFunction = function () {
-     $http({
-         method: 'GET',
-         url: 'http://localhost/Mystudio_webapp/angular/API/Controller/controller.php/getCustomerBookings',
-         params:{
-          id:6
-         }
-     }).then(function (response) {
+    $http({
+      method: 'GET',
+      url: 'http://localhost/Mystudio_webapp/angular/API/Controller/controller.php/getCustomerBookings',
+      //  withCredentials: false,
+      params: {
+        id: localStorage.userId
+      }
+    }).then(function (response) {
       $scope.roomBookingData3 = response.data;
       initializeDataTable();
     }).catch(function (error) {
       $scope.roomBookingData3 = [];
       initializeDataTable();
-      // const message = `No Bookings yet.`;
-      // $('#message').text(message);
-      // $('#signInModal').modal('show');
-      // $timeout(function () {
-      //   $('.modal-backdrop').remove();
-      //   $location.path('/room');
-      // }, 2000);
+      if (error.status == 401) {
+        const message = error.data.message;
+        $('#message').text(message);
+        $('#signInModal').modal('show');
+        $timeout(function () {
+          $('.modal-backdrop').remove();
+          $location.path('/login');
+        }, 2000);
+      }
     });
   }
   $scope.initFunction();
@@ -52,9 +53,6 @@ myApp.controller('dt2Ctrl', ['$scope', '$timeout', '$location', '$http', functio
   $scope.selectedUser;
   $scope.editDetails = function (data) {
     $scope.selectedUser = angular.copy(data);
-    // $rootScope.temp = $scope.selectedUser;
-    // console.log($rootScope.temp)
-    // $scope.selectedUser = angular.data;
   };
 
   $scope.onUpdate = function () {
@@ -65,59 +63,59 @@ myApp.controller('dt2Ctrl', ['$scope', '$timeout', '$location', '$http', functio
 
   var table;
   function initializeDataTable() {
-  $(document).ready(function () {
-    if (!$.fn.DataTable.isDataTable('#example')) {
-      table = $('#example').DataTable({
-        "paging": true,
-        "pagingType": "simple_numbers",
-        language: {
-          info: " _START_ - _END_ of _TOTAL_ ",
-          sLengthMenu: 'Rows per page: _MENU_',
-          "paginate": {
-            "previous": "<",
-            "next": "> "
+    $(document).ready(function () {
+      if (!$.fn.DataTable.isDataTable('#example')) {
+        table = $('#example').DataTable({
+          "paging": true,
+          "pagingType": "simple_numbers",
+          language: {
+            info: " _START_ - _END_ of _TOTAL_ ",
+            sLengthMenu: 'Rows per page: _MENU_',
+            "paginate": {
+              "previous": "<",
+              "next": "> "
+            },
           },
-        },
-        // "pageLength": 10,
-        "drawCallback": function (settings) {
-          var api = this.api();
-          var pageInfo = api.page.info();
-          var paginationDiv = $(this).closest('.dataTables_wrapper').find('.dataTables_paginate');
-          // Create a custom content for the pagination span
-          var customPagination = '<span class="custom-pagination">' + '<span class="highlight">' + (pageInfo.page + 1) + '</span>' + '/' + pageInfo.pages + '</span>';
-          // Replace the content of the existing span with the custom content
-          paginationDiv.find('span').replaceWith(customPagination);
-        },
+          // "pageLength": 10,
+          "drawCallback": function (settings) {
+            var api = this.api();
+            var pageInfo = api.page.info();
+            var paginationDiv = $(this).closest('.dataTables_wrapper').find('.dataTables_paginate');
+            // Create a custom content for the pagination span
+            var customPagination = '<span class="custom-pagination">' + '<span class="highlight">' + (pageInfo.page + 1) + '</span>' + '/' + pageInfo.pages + '</span>';
+            // Replace the content of the existing span with the custom content
+            paginationDiv.find('span').replaceWith(customPagination);
+          },
 
-        "columnDefs": [
-          // {
-          //   "targets": 1, // Target the second column
-          //   "render": function (data, type, row, meta) {
-          //     // Use meta.row to get the row index
-          //     return '<span style="color: black;" >' + (meta.row + 1) + '</span>';
-          //   }
-          // },
-          // {
-          //   "targets": 0, // Target the first column
-          //   "orderable": false, // Disable sorting on this column
-          //   // "className": 'dt-body-center', // Center align the content
-          //   "render": function (data, type, full, meta) {
-          //     return '<input type="checkbox">';
-          //   }
-          // },
-          { "orderable": false, "targets": [0, 7, 8] }
-        ],
-        "order": [[1, 'asc']],
-        "lengthMenu": [5, 10, 25, 50, 100],
-        "dom": '<"top">rt<"bottom"ilp><"clear">'
-      });
+          "columnDefs": [
+            // {
+            //   "targets": 1, // Target the second column
+            //   "render": function (data, type, row, meta) {
+            //     // Use meta.row to get the row index
+            //     return '<span style="color: black;" >' + (meta.row + 1) + '</span>';
+            //   }
+            // },
+            // {
+            //   "targets": 0, // Target the first column
+            //   "orderable": false, // Disable sorting on this column
+            //   // "className": 'dt-body-center', // Center align the content
+            //   "render": function (data, type, full, meta) {
+            //     return '<input type="checkbox">';
+            //   }
+            // },
+            { "orderable": false, "targets": [0, 7, 8] }
+          ],
+          "order": [[1, 'asc']],
+          "lengthMenu": [5, 10, 25, 50, 100],
+          "dom": '<"top">rt<"bottom"ilp><"clear">'
+        });
 
-      $('#custom_filter').on('keyup', function () {
-        var searchValue = $('#custom_filter input[name="search"]').val();
-        table.search(searchValue).draw();
-      });
-    }
-  });
+        $('#custom_filter').on('keyup', function () {
+          var searchValue = $('#custom_filter input[name="search"]').val();
+          table.search(searchValue).draw();
+        });
+      }
+    });
   }
 }]);
 
@@ -145,7 +143,7 @@ myApp.filter('phoneNumber', function () {
   };
 });
 
-myApp.controller('EditController', function () {
+myApp.controller('EditController', ['$http', function ($http) {
   var ctrl = this;
   ctrl.openDatePicker = function () {
     $('#datepicker-modal').datepicker('show');
@@ -166,42 +164,21 @@ myApp.controller('EditController', function () {
   })
 
   ctrl.onSubmit = function (updatedData) {
-    var roomBookingData3 = JSON.parse(localStorage.getItem('roomBookingData3'));
-    var roomBookingData = JSON.parse(localStorage.getItem('roomBookingData'));
-    var updatedData = updatedData;
-    // console.log($rootScope.temp);
-    // var temp=$rootScope.temp;
-
-
-    // Find the index of the object with a matching 'id' in the array
-    var index = roomBookingData3.findIndex(function (item) {
-      return item.name === updatedData.name;
+    $http({
+      method: 'POST',
+      url: 'http://localhost/Mystudio_webapp/angular/API/Controller/controller.php?action=updateCustomerBookings',
+      data: updatedData,
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      transformResponse: [function (data) {
+        return data;
+      }]
+    }).then(function (response) {
+      ctrl.onUpdate();
+    }).catch(function (error) {
+      console.log(error.data);
     });
-
-    // If the object is found, update it
-    if (index !== -1) {
-      roomBookingData3[index] = updatedData;
-
-      // Save the updated array back to local storage
-      localStorage.setItem('roomBookingData3', JSON.stringify(roomBookingData3));
-    } else {
-      console.error("Object not found for update");
-    }
-
-    // Find the index of the object with a matching 'id' in the array
-    var index = roomBookingData.findIndex(function (item) {
-      return item.name === updatedData.name;
-    });
-
-    // If the object is found, update it
-    if (index !== -1) {
-      roomBookingData[index] = updatedData;
-
-      // Save the updated array back to local storage
-      localStorage.setItem('roomBookingData', JSON.stringify(roomBookingData));
-    } else {
-      console.error("Object not found for update");
-    }
-    ctrl.onUpdate();
   }
-});
+
+}]);

@@ -17,7 +17,7 @@
     }
 </style>
 
-<div class="main" ng-controller="roomSelectionCtrl">
+<div class="main" >
 
     <div class="heading">
         <h2>Room Booking</h2>
@@ -35,9 +35,9 @@
             </thead>
 
             <tr ng-repeat="room in roomData" scope="row">
-                <td>{{ room.roomNumber }}</td>
-                <td>{{ room.roomType }}</td>
-                <td>{{ room.roomSize }}</td>
+                <td>{{ room.room_number }}</td>
+                <td>{{ room.room_type }}</td>
+                <td>{{ room.room_size }}</td>
                 <td><button ng-click="bookRoom(room)">Book</button></td>
 
             </tr>
